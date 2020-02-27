@@ -29,6 +29,86 @@
     "type": "text",
     "placeholders": {}
   },
+  "emergencyNumber": "Emergency Number: 112",
+  "@emergencyNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "emergencyNumberHint": "This number is only eligible in Europe.",
+  "@emergencyNumberHint": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomDryCaugh": "Dry cough",
+  "@symptomDryCaugh": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomPneumonia": "Pneumonia",
+  "@symptomPneumonia": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomSeriousBreathing": "Serious breathing difficulties",
+  "@symptomSeriousBreathing": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomFever": "Fever",
+  "@symptomFever": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomBreathing": "Difficulty with breathing",
+  "@symptomBreathing": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomExposedPerson": "Have you been exposed to someone of the infected region?",
+  "@symptomExposedPerson": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomExposedRegion": "Have you been in one the infected region?",
+  "@symptomExposedRegion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkSymptoms": "Covid-19",
+  "@checkSymptoms": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "infectionInformation": "If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority.",
+  "@infectionInformation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "considerWearingMask": "Consider wearing a Mouth-Nose-Defence to secure emergency personnel and people.",
+  "@considerWearingMask": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "possibleInfection": "Possible Infection",
+  "@possibleInfection": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "emergencyNumberDescription": "If you feel very unwell and need immediately help consider calling the emergency number. \n\n Emergency Number: 112 \n\n This number is only eligible in Europe.",
+  "@emergencyNumberDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "seekingForHelpTitle": "Seeking for help",
+  "@seekingForHelpTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "emergencyNumberTitle": "Emergency Number",
+  "@emergencyNumberTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
   "washHandTitle": "Hände regelmäßig waschen",
   "@washHandTitle": {
     "type": "text",
@@ -76,6 +156,21 @@
   },
   "stayInformedText": "Bleiben Sie über die neuesten Entwicklungen zu COVID-19 auf dem Laufenden. Befolgen Sie die Anweisungen Ihrer Gesundheitsbehörde, damit Sie sich und andere vor COVID-19 schützen können.",
   "@stayInformedText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unwellTitle": "If you feel unwell",
+  "@unwellTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unwellDescription": "Stay at home.",
+  "@unwellDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "protectingOthersTitle": "Protect others from getting sick.",
+  "@protectingOthersTitle": {
     "type": "text",
     "placeholders": {}
   }

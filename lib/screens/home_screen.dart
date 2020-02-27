@@ -1,6 +1,6 @@
 import 'package:covid_19/generated/l10n.dart';
-import 'package:covid_19/screens/emergency_widget.dart';
-import 'package:covid_19/screens/home_screen_widget.dart';
+import 'package:covid_19/screens/emergency/emergency_widget.dart';
+import 'package:covid_19/screens/home/home_screen_widget.dart';
 import 'package:covid_19/screens/prevention_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';

@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 ThemeData defaultTheme = ThemeData.light().copyWith(
-    colorScheme: ThemeData.light().colorScheme.copyWith(
-          brightness: Brightness.light,
-          primary: defaultColor.shade500,
-        ),
-    primaryColor: defaultColor.shade500,
-    textTheme: defaultText);
+  colorScheme: ThemeData.light().colorScheme.copyWith(
+        brightness: Brightness.light,
+        primary: defaultColor.shade500,
+      ),
+  primaryColor: defaultColor.shade500,
+  toggleableActiveColor: defaultColor.shade800,
+  accentColor: defaultColor.shade300,
+  textTheme: defaultText,
+);
 
 TextTheme defaultText = GoogleFonts.latoTextTheme();
 

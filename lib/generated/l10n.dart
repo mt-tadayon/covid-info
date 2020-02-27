@@ -83,6 +83,150 @@ class S {
     );
   }
 
+  String get emergencyNumber {
+    return Intl.message(
+      'Emergency Number: 112',
+      name: 'emergencyNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get emergencyNumberHint {
+    return Intl.message(
+      'This number is only eligible in Europe.',
+      name: 'emergencyNumberHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get symptomDryCaugh {
+    return Intl.message(
+      'Dry cough',
+      name: 'symptomDryCaugh',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get symptomPneumonia {
+    return Intl.message(
+      'Pneumonia',
+      name: 'symptomPneumonia',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get symptomSeriousBreathing {
+    return Intl.message(
+      'Serious breathing difficulties',
+      name: 'symptomSeriousBreathing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get symptomFever {
+    return Intl.message(
+      'Fever',
+      name: 'symptomFever',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get symptomBreathing {
+    return Intl.message(
+      'Difficulty with breathing',
+      name: 'symptomBreathing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get symptomExposedPerson {
+    return Intl.message(
+      'Have you been exposed to someone of the infected region?',
+      name: 'symptomExposedPerson',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get symptomExposedRegion {
+    return Intl.message(
+      'Have you been in one the infected region?',
+      name: 'symptomExposedRegion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get checkSymptoms {
+    return Intl.message(
+      'Covid-19',
+      name: 'checkSymptoms',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get infectionInformation {
+    return Intl.message(
+      'If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority.',
+      name: 'infectionInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get considerWearingMask {
+    return Intl.message(
+      'Consider wearing a Mouth-Nose-Defence to secure emergency personnel and people.',
+      name: 'considerWearingMask',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get possibleInfection {
+    return Intl.message(
+      'Possible Infection',
+      name: 'possibleInfection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get emergencyNumberDescription {
+    return Intl.message(
+      'If you feel very unwell and need immediately help consider calling the emergency number. \n\n Emergency Number: 112 \n\n This number is only eligible in Europe.',
+      name: 'emergencyNumberDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get seekingForHelpTitle {
+    return Intl.message(
+      'Seeking for help',
+      name: 'seekingForHelpTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get emergencyNumberTitle {
+    return Intl.message(
+      'Emergency Number',
+      name: 'emergencyNumberTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
   String get washHandTitle {
     return Intl.message(
       'Hände regelmäßig waschen',
@@ -168,6 +312,33 @@ class S {
     return Intl.message(
       'Bleiben Sie über die neuesten Entwicklungen zu COVID-19 auf dem Laufenden. Befolgen Sie die Anweisungen Ihrer Gesundheitsbehörde, damit Sie sich und andere vor COVID-19 schützen können.',
       name: 'stayInformedText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get unwellTitle {
+    return Intl.message(
+      'If you feel unwell',
+      name: 'unwellTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get unwellDescription {
+    return Intl.message(
+      'Stay at home.',
+      name: 'unwellDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get protectingOthersTitle {
+    return Intl.message(
+      'Protect others from getting sick.',
+      name: 'protectingOthersTitle',
       desc: '',
       args: [],
     );
