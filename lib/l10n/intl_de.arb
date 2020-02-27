@@ -19,12 +19,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "appBarTitlePrevention": "Prevention",
+  "appBarTitlePrevention": "Vorbeugende Maßnahmen",
   "@appBarTitlePrevention": {
     "type": "text",
     "placeholders": {}
   },
-  "appBarTitleEmergency": "Emergency",
+  "appBarTitleEmergency": "Notfall",
   "@appBarTitleEmergency": {
     "type": "text",
     "placeholders": {}
@@ -59,7 +59,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "respiratoryHygieneTitle": "Husten und Niesen in Elenbogen",
+  "respiratoryHygieneTitle": "Husten und Niesen in Ellenbogen",
   "@respiratoryHygieneTitle": {
     "type": "text",
     "placeholders": {}
@@ -76,6 +76,46 @@
   },
   "stayInformedText": "Bleiben Sie über die neuesten Entwicklungen zu COVID-19 auf dem Laufenden. Befolgen Sie die Anweisungen Ihrer Gesundheitsbehörde, damit Sie sich und andere vor COVID-19 schützen können.",
   "@stayInformedText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unwellTitle": "Wenn Sie sich unwohl fühlen",
+  "@unwellTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unwellDescription": "Bleiben Sie am besten Zuhause.",
+  "@unwellDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "seekingForHelpTitle": "Suche nach Hilfe",
+  "@seekingForHelpTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "infectionInformation": "Wenn Sie Fieber, Husten und Probleme beim Atmen haben, rufen Sie zunächst bei Ihrem Hausarzt an. Folgen Sie den Anweisungen Ihrer örtlichen Gesundheitsamtes.",
+  "@infectionInformation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "protectingOthersTitle": "Schützen Sie andere vor dem Erkranken.",
+  "@protectingOthersTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "considerWearingMask": "Überlegen Sie sich, eine Mund-Nasen-Maske zu tragen um Freunde und Verwandte sowie Rettungspersonal zu schützen.",
+  "@considerWearingMask": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "emergencyNumberTitle": "Notruf Nummer",
+  "@emergencyNumberTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "emergencyNumberDescription": "Sollten Sie sich sehr schlecht fühlen, außerstande sein zum Arzt zu kommen und sofortige Hilfe benötigen. Rufen Sie den Notruf. \n\n Notruf Nummer: 112 \n\n Diese Nummer ist nur in Europa zu erreichen.",
+  "@emergencyNumberDescription": {
     "type": "text",
     "placeholders": {}
   }

@@ -36,7 +36,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "keepDistanceText" : MessageLookupByLibrary.simpleMessage("Halten Sie einen Abstand von mindestens ein bis zwei Meter zwischen sich und Personen ein, die husten oder niesen."),
     "keepDistanceTitle" : MessageLookupByLibrary.simpleMessage("Halten Sie 1-2 Meter Abstand"),
     "navigationBarHome" : MessageLookupByLibrary.simpleMessage("Home"),
-    "navigationEmergency" : MessageLookupByLibrary.simpleMessage("Notfall"),
+    "navigationEmergency" : MessageLookupByLibrary.simpleMessage("Emergency"),
     "navigationPrevention" : MessageLookupByLibrary.simpleMessage("Prevention"),
     "possibleInfection" : MessageLookupByLibrary.simpleMessage("Possible Infection"),
     "protectingOthersTitle" : MessageLookupByLibrary.simpleMessage("Protect others from getting sick."),

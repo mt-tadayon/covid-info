@@ -49,7 +49,7 @@ class S {
 
   String get navigationEmergency {
     return Intl.message(
-      'Notfall',
+      'Emergency',
       name: 'navigationEmergency',
       desc: '',
       args: [],

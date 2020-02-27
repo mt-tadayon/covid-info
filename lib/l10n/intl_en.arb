@@ -9,7 +9,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "navigationEmergency": "Notfall",
+  "navigationEmergency": "Emergency",
   "@navigationEmergency": {
     "type": "text",
     "placeholders": {}

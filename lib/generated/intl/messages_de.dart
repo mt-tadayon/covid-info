@@ -21,20 +21,28 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
-    "appBarTitleEmergency" : MessageLookupByLibrary.simpleMessage("Emergency"),
+    "appBarTitleEmergency" : MessageLookupByLibrary.simpleMessage("Notfall"),
     "appBarTitleHome" : MessageLookupByLibrary.simpleMessage("Home"),
-    "appBarTitlePrevention" : MessageLookupByLibrary.simpleMessage("Prevention"),
+    "appBarTitlePrevention" : MessageLookupByLibrary.simpleMessage("Vorbeugende Maßnahmen"),
     "avoidTouchingText" : MessageLookupByLibrary.simpleMessage("Hände berühren viele Oberflächen und können Viren aufnehmen. Einmal kontaminiert, können Hände das Virus auf Ihre Augen, Nase oder Mund übertragen. Von dort kann das Virus in Ihren Körper eindringen und Sie krank machen."),
     "avoidTouchingTitle" : MessageLookupByLibrary.simpleMessage("Berühren Sie nicht Augen, Nase und Mund"),
+    "considerWearingMask" : MessageLookupByLibrary.simpleMessage("Überlegen Sie sich, eine Mund-Nasen-Maske zu tragen um Freunde und Verwandte sowie Rettungspersonal zu schützen."),
+    "emergencyNumberDescription" : MessageLookupByLibrary.simpleMessage("Sollten Sie sich sehr schlecht fühlen, außerstande sein zum Arzt zu kommen und sofortige Hilfe benötigen. Rufen Sie den Notruf. \n\n Notruf Nummer: 112 \n\n Diese Nummer ist nur in Europa zu erreichen."),
+    "emergencyNumberTitle" : MessageLookupByLibrary.simpleMessage("Notruf Nummer"),
+    "infectionInformation" : MessageLookupByLibrary.simpleMessage("Wenn Sie Fieber, Husten und Probleme beim Atmen haben, rufen Sie zunächst bei Ihrem Hausarzt an. Folgen Sie den Anweisungen Ihrer örtlichen Gesundheitsamtes."),
     "keepDistanceText" : MessageLookupByLibrary.simpleMessage("Halten Sie einen Abstand von mindestens ein bis zwei Meter zwischen sich und Personen ein, die husten oder niesen."),
     "keepDistanceTitle" : MessageLookupByLibrary.simpleMessage("Halten Sie 1-2 Meter Abstand"),
     "navigationBarHome" : MessageLookupByLibrary.simpleMessage("Home"),
     "navigationEmergency" : MessageLookupByLibrary.simpleMessage("Notfall"),
     "navigationPrevention" : MessageLookupByLibrary.simpleMessage("Prevention"),
+    "protectingOthersTitle" : MessageLookupByLibrary.simpleMessage("Schützen Sie andere vor dem Erkranken."),
     "respiratoryHygieneText" : MessageLookupByLibrary.simpleMessage("Stellen Sie sicher, dass Sie beim Husten oder Niesen Ihr Mund und Nase mit gebeugtem Ellbogen oder Taschentuch bedecken. Entsorgen Sie das gebrauchte Taschentuch danach sofort."),
-    "respiratoryHygieneTitle" : MessageLookupByLibrary.simpleMessage("Husten und Niesen in Elenbogen"),
+    "respiratoryHygieneTitle" : MessageLookupByLibrary.simpleMessage("Husten und Niesen in Ellenbogen"),
+    "seekingForHelpTitle" : MessageLookupByLibrary.simpleMessage("Suche nach Hilfe"),
     "stayInformedText" : MessageLookupByLibrary.simpleMessage("Bleiben Sie über die neuesten Entwicklungen zu COVID-19 auf dem Laufenden. Befolgen Sie die Anweisungen Ihrer Gesundheitsbehörde, damit Sie sich und andere vor COVID-19 schützen können."),
     "stayInformedTitle" : MessageLookupByLibrary.simpleMessage("Informieren Sie sich und befolgen Sie die Ratschläge des Robert Koch Institutes"),
+    "unwellDescription" : MessageLookupByLibrary.simpleMessage("Bleiben Sie am besten Zuhause."),
+    "unwellTitle" : MessageLookupByLibrary.simpleMessage("Wenn Sie sich unwohl fühlen"),
     "washHandText" : MessageLookupByLibrary.simpleMessage("Waschen Sie Ihre Hände regelmäßig und gründlich mit Wasser und Seife für 20 Sekunden."),
     "washHandTitle" : MessageLookupByLibrary.simpleMessage("Hände regelmäßig waschen")
   };
