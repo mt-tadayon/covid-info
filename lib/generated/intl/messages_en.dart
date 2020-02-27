@@ -24,8 +24,18 @@ class MessageLookup extends MessageLookupByLibrary {
     "appBarTitleEmergency" : MessageLookupByLibrary.simpleMessage("Emergency"),
     "appBarTitleHome" : MessageLookupByLibrary.simpleMessage("Home"),
     "appBarTitlePrevention" : MessageLookupByLibrary.simpleMessage("Prevention"),
+    "avoidTouchingText" : MessageLookupByLibrary.simpleMessage("Hände berühren viele Oberflächen und können Viren aufnehmen. Einmal kontaminiert, können Hände das Virus auf Ihre Augen, Nase oder Mund übertragen. Von dort kann das Virus in Ihren Körper eindringen und Sie krank machen."),
+    "avoidTouchingTitle" : MessageLookupByLibrary.simpleMessage("Berühren Sie nicht Augen, Nase und Mund"),
+    "keepDistanceText" : MessageLookupByLibrary.simpleMessage("Halten Sie einen Abstand von mindestens ein bis zwei Meter zwischen sich und Personen ein, die husten oder niesen."),
+    "keepDistanceTitle" : MessageLookupByLibrary.simpleMessage("Halten Sie 1-2 Meter Abstand"),
     "navigationBarHome" : MessageLookupByLibrary.simpleMessage("Home"),
-    "navigationEmergency" : MessageLookupByLibrary.simpleMessage("Emergency"),
-    "navigationPrevention" : MessageLookupByLibrary.simpleMessage("Prevention")
+    "navigationEmergency" : MessageLookupByLibrary.simpleMessage("Notfall"),
+    "navigationPrevention" : MessageLookupByLibrary.simpleMessage("Prevention"),
+    "respiratoryHygieneText" : MessageLookupByLibrary.simpleMessage("Stellen Sie sicher, dass Sie beim Husten oder Niesen Ihr Mund und Nase mit gebeugtem Ellbogen oder Taschentuch bedecken. Entsorgen Sie das gebrauchte Taschentuch danach sofort."),
+    "respiratoryHygieneTitle" : MessageLookupByLibrary.simpleMessage("Husten und Niesen in Elenbogen"),
+    "stayInformedText" : MessageLookupByLibrary.simpleMessage("Bleiben Sie über die neuesten Entwicklungen zu COVID-19 auf dem Laufenden. Befolgen Sie die Anweisungen Ihrer Gesundheitsbehörde, damit Sie sich und andere vor COVID-19 schützen können."),
+    "stayInformedTitle" : MessageLookupByLibrary.simpleMessage("Informieren Sie sich und befolgen Sie die Ratschläge des Robert Koch Institutes"),
+    "washHandText" : MessageLookupByLibrary.simpleMessage("Waschen Sie Ihre Hände regelmäßig und gründlich mit Wasser und Seife für 20 Sekunden."),
+    "washHandTitle" : MessageLookupByLibrary.simpleMessage("Hände regelmäßig waschen")
   };
 }

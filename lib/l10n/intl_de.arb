@@ -28,5 +28,55 @@
   "@appBarTitleEmergency": {
     "type": "text",
     "placeholders": {}
+  },
+  "washHandTitle": "Hände regelmäßig waschen",
+  "@washHandTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "washHandText": "Waschen Sie Ihre Hände regelmäßig und gründlich mit Wasser und Seife für 20 Sekunden.",
+  "@washHandText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "keepDistanceTitle": "Halten Sie 1-2 Meter Abstand",
+  "@keepDistanceTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "keepDistanceText": "Halten Sie einen Abstand von mindestens ein bis zwei Meter zwischen sich und Personen ein, die husten oder niesen.",
+  "@keepDistanceText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "avoidTouchingTitle": "Berühren Sie nicht Augen, Nase und Mund",
+  "@avoidTouchingTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "avoidTouchingText": "Hände berühren viele Oberflächen und können Viren aufnehmen. Einmal kontaminiert, können Hände das Virus auf Ihre Augen, Nase oder Mund übertragen. Von dort kann das Virus in Ihren Körper eindringen und Sie krank machen.",
+  "@avoidTouchingText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "respiratoryHygieneTitle": "Husten und Niesen in Elenbogen",
+  "@respiratoryHygieneTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "respiratoryHygieneText": "Stellen Sie sicher, dass Sie beim Husten oder Niesen Ihr Mund und Nase mit gebeugtem Ellbogen oder Taschentuch bedecken. Entsorgen Sie das gebrauchte Taschentuch danach sofort.",
+  "@respiratoryHygieneText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "stayInformedTitle": "Informieren Sie sich und befolgen Sie die Ratschläge des Robert Koch Institutes",
+  "@stayInformedTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "stayInformedText": "Bleiben Sie über die neuesten Entwicklungen zu COVID-19 auf dem Laufenden. Befolgen Sie die Anweisungen Ihrer Gesundheitsbehörde, damit Sie sich und andere vor COVID-19 schützen können.",
+  "@stayInformedText": {
+    "type": "text",
+    "placeholders": {}
   }
 }
