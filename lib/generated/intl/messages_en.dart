@@ -21,6 +21,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
-
+    "navigationBarHome" : MessageLookupByLibrary.simpleMessage("Home"),
+    "navigationEmergency" : MessageLookupByLibrary.simpleMessage("Emergency"),
+    "navigationPrevention" : MessageLookupByLibrary.simpleMessage("Prevention")
   };
 }

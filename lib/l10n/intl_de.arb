@@ -1,1 +1,17 @@
-{}
+{
+  "navigationBarHome": "Home",
+  "@navigationBarHome": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "navigationPrevention": "Prevention",
+  "@navigationPrevention": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "navigationEmergency": "Notfall",
+  "@navigationEmergency": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

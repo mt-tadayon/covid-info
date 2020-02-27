@@ -29,7 +29,32 @@ class S {
 
   final String localeName;
 
+  String get navigationBarHome {
+    return Intl.message(
+      'Home',
+      name: 'navigationBarHome',
+      desc: '',
+      args: [],
+    );
+  }
 
+  String get navigationPrevention {
+    return Intl.message(
+      'Prevention',
+      name: 'navigationPrevention',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get navigationEmergency {
+    return Intl.message(
+      'Emergency',
+      name: 'navigationEmergency',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
