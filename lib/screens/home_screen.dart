@@ -13,11 +13,17 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int selectedTab = 0;
   Widget currentView = HomeScreenWidget();
+  Text appBarTitle;
 
   @override
   Widget build(BuildContext context) {
+    appBarTitle = appBarTitle ?? Text(S.of(context).appBarTitleHome);
+
     return Scaffold(
       body: currentView,
+      appBar: AppBar(
+        title: appBarTitle,
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedTab,
         onTap: (tab) {
@@ -26,14 +32,18 @@ class _HomeScreenState extends State<HomeScreen> {
             switch (selectedTab) {
               case 0:
                 currentView = HomeScreenWidget();
+                appBarTitle = Text(S.of(context).appBarTitleHome);
                 break;
               case 1:
                 currentView = PreventionWidget();
+                appBarTitle = Text(S.of(context).appBarTitlePrevention);
                 break;
               case 2:
                 currentView = EmergencyWidget();
+                appBarTitle = Text(S.of(context).appBarTitleEmergency);
                 break;
               default:
+                appBarTitle = Text(S.of(context).appBarTitleHome);
                 currentView = HomeScreenWidget();
             }
           });

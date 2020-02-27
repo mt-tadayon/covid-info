@@ -13,5 +13,20 @@
   "@navigationEmergency": {
     "type": "text",
     "placeholders": {}
+  },
+  "appBarTitleHome": "Home",
+  "@appBarTitleHome": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appBarTitlePrevention": "Prevention",
+  "@appBarTitlePrevention": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appBarTitleEmergency": "Emergency",
+  "@appBarTitleEmergency": {
+    "type": "text",
+    "placeholders": {}
   }
 }

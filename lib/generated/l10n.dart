@@ -55,6 +55,33 @@ class S {
       args: [],
     );
   }
+
+  String get appBarTitleHome {
+    return Intl.message(
+      'Home',
+      name: 'appBarTitleHome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get appBarTitlePrevention {
+    return Intl.message(
+      'Prevention',
+      name: 'appBarTitlePrevention',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get appBarTitleEmergency {
+    return Intl.message(
+      'Emergency',
+      name: 'appBarTitleEmergency',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
