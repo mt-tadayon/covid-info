@@ -1,5 +1,6 @@
 import 'package:covid_19/generated/l10n.dart';
 import 'package:covid_19/screens/home_screen.dart';
+import 'package:covid_19/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -18,9 +19,7 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: defaultTheme,
       home: HomeScreen(),
     );
   }
