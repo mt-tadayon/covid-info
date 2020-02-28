@@ -1,7 +1,7 @@
 import 'package:covid_19/generated/l10n.dart';
 import 'package:covid_19/screens/emergency/emergency_widget.dart';
-import 'package:covid_19/screens/home/home_screen_widget.dart';
-import 'package:covid_19/screens/prevention_widget.dart';
+import 'package:covid_19/screens/home/home_widget.dart';
+import 'package:covid_19/screens/prevention/prevention_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
@@ -44,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: PageView(
           controller: _controller,
           children: <Widget>[
-            HomeScreenWidget(),
+            HomeWidget(),
             PreventionWidget(),
             EmergencyWidget(),
           ],

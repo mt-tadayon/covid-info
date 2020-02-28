@@ -1,7 +1,7 @@
 import 'package:covid_19/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
-class ListOfSymptoms extends StatelessWidget {
+class ListOfSymptomsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
