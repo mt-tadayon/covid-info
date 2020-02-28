@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "150050072591",
+    "firebase_url": "https://covid-info.firebaseio.com",
+    "project_id": "covid-info",
+    "storage_bucket": "covid-info.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150050072591:android:0f6e4b22b04902d0ce1b7a",
+        "android_client_info": {
+          "package_name": "de.myracledesign.covidinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150050072591-iomt58hfhcv65mddjnsfieo3m8vehcf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvpMrVa4qPidBcyT5DCPEuc2t-uNdpp5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150050072591-iomt58hfhcv65mddjnsfieo3m8vehcf0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "150050072591-743b4v3934milusqf7teq6vbobov7kbi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "de.myracledesign.covidinfo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

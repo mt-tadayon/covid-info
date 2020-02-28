@@ -2,6 +2,7 @@ import 'package:covid_19/generated/l10n.dart';
 import 'package:covid_19/screens/emergency/emergency_widget.dart';
 import 'package:covid_19/screens/home/home_widget.dart';
 import 'package:covid_19/screens/prevention/prevention_widget.dart';
+import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
@@ -18,11 +19,30 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void dispose() {
     _controller.dispose();
+    myBanner.dispose();
     super.dispose();
   }
 
   @override
   void initState() {
+    myBanner = BannerAd(
+        adUnitId: BannerAd.testAdUnitId,
+        size: AdSize.smartBanner,
+        listener: (MobileAdEvent event) {
+          if (event == MobileAdEvent.loaded) {
+            setState(() {
+              bannerHeight = myBanner.size.height.toDouble();
+            });
+          }
+        });
+
+    myBanner
+      ..load()
+      ..show(
+        anchorType: AnchorType.bottom,
+        anchorOffset: 50.0,
+      );
+
     _controller.addListener(() {
       setState(() {
         selectedTab = _controller.page.toInt();
@@ -31,8 +51,10 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
   }
 
+  BannerAd myBanner;
   int selectedTab = 0;
   Text appBarTitle;
+  double bannerHeight = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +62,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(top: 10.0, left: 20, right: 20),
+        padding: EdgeInsets.only(
+          top: 10.0,
+          left: 20,
+          right: 20,
+          bottom: 60,
+        ),
         child: PageView(
           controller: _controller,
           children: <Widget>[
