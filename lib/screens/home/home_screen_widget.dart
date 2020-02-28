@@ -1,4 +1,5 @@
 import 'package:covid_19/screens/home/list_of_symptoms.dart';
+import 'package:covid_19/screens/home/question_card.dart';
 import 'package:flutter/material.dart';
 
 const medicineImageUrl = "assets/undraw/medicine.png";
@@ -27,7 +28,8 @@ class HomeScreenWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(bottom: 8.0),
           child: ListOfSymptoms(),
-        )
+        ),
+        QuestionCard()
       ],
     );
   }

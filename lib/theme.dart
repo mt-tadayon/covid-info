@@ -8,7 +8,7 @@ ThemeData defaultTheme = ThemeData.light().copyWith(
       ),
   primaryColor: defaultColor.shade500,
   toggleableActiveColor: defaultColor.shade800,
-  accentColor: defaultColor.shade300,
+  accentColor: defaultColor.shade500,
   textTheme: defaultText,
 );
 
