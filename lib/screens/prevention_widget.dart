@@ -6,37 +6,37 @@ import 'package:flutter_icons/flutter_icons.dart';
 class PreventionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(20.0),
-      child: ListView(
-        children: <Widget>[
-          CardWidget(
-            title: S.of(context).washHandTitle,
-            text: S.of(context).washHandText,
-            icon: Icon(FontAwesome5Solid.user_shield),
-          ),
-          CardWidget(
-            title: S.of(context).keepDistanceTitle,
-            text: S.of(context).keepDistanceText,
-            icon: Icon(FontAwesome5Solid.user_friends),
-          ),
-          CardWidget(
-            title: S.of(context).avoidTouchingTitle,
-            text: S.of(context).avoidTouchingText,
-            icon: Icon(FontAwesome5Solid.ban),
-          ),
-          CardWidget(
-            title: S.of(context).respiratoryHygieneTitle,
-            text: S.of(context).respiratoryHygieneText,
-            icon: Icon(FontAwesome5Solid.biohazard),
-          ),
-          CardWidget(
+    return ListView(
+      children: <Widget>[
+        CardWidget(
+          title: S.of(context).washHandTitle,
+          text: S.of(context).washHandText,
+          icon: Icon(FontAwesome5Solid.user_shield),
+        ),
+        CardWidget(
+          title: S.of(context).keepDistanceTitle,
+          text: S.of(context).keepDistanceText,
+          icon: Icon(FontAwesome5Solid.user_friends),
+        ),
+        CardWidget(
+          title: S.of(context).avoidTouchingTitle,
+          text: S.of(context).avoidTouchingText,
+          icon: Icon(FontAwesome5Solid.ban),
+        ),
+        CardWidget(
+          title: S.of(context).respiratoryHygieneTitle,
+          text: S.of(context).respiratoryHygieneText,
+          icon: Icon(FontAwesome5Solid.biohazard),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8.0),
+          child: CardWidget(
             title: S.of(context).stayInformedTitle,
             text: S.of(context).stayInformedText,
             icon: Icon(FontAwesome5Solid.info_circle),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

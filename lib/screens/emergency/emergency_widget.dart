@@ -17,32 +17,32 @@ class _EmergencyWidgetState extends State<EmergencyWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(20.0),
-      child: ListView(
-        children: <Widget>[
-          CardWidget(
-            title: S.of(context).unwellTitle,
-            text: S.of(context).unwellDescription,
-            icon: Icon(FontAwesome5Solid.home),
-          ),
-          CardWidget(
-            title: S.of(context).seekingForHelpTitle,
-            text: S.of(context).infectionInformation,
-            icon: Icon(FontAwesome5Solid.first_aid),
-          ),
-          CardWidget(
-            title: S.of(context).protectingOthersTitle,
-            text: S.of(context).considerWearingMask,
-            icon: Icon(FontAwesome5Solid.theater_masks),
-          ),
-          CardWidget(
+    return ListView(
+      children: <Widget>[
+        CardWidget(
+          title: S.of(context).unwellTitle,
+          text: S.of(context).unwellDescription,
+          icon: Icon(FontAwesome5Solid.home),
+        ),
+        CardWidget(
+          title: S.of(context).seekingForHelpTitle,
+          text: S.of(context).infectionInformation,
+          icon: Icon(FontAwesome5Solid.first_aid),
+        ),
+        CardWidget(
+          title: S.of(context).protectingOthersTitle,
+          text: S.of(context).considerWearingMask,
+          icon: Icon(FontAwesome5Solid.theater_masks),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8.0),
+          child: CardWidget(
             title: S.of(context).emergencyNumberTitle,
             text: S.of(context).emergencyNumberDescription,
             icon: Icon(FontAwesome5Solid.phone),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

@@ -20,7 +20,10 @@ class _HomeScreenState extends State<HomeScreen> {
     appBarTitle = appBarTitle ?? Text(S.of(context).appBarTitleHome);
 
     return Scaffold(
-      body: currentView,
+      body: Padding(
+        padding: const EdgeInsets.only(top: 10.0, left: 20, right: 20),
+        child: currentView,
+      ),
       appBar: AppBar(
         title: appBarTitle,
       ),
