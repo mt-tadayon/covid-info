@@ -22,6 +22,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - "assets/undraw/"
 
 flutter_intl:
   enabled: true
+

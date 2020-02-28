@@ -12,12 +12,7 @@ class ListOfSymptoms extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              S.of(context).checkSymptoms,
-              style: Theme.of(context).textTheme.headline,
-            ),
-            Divider(height: 20.0),
-            Text(
-              "Generic symptoms",
+              S.of(context).genericSymptoms,
               style: Theme.of(context).textTheme.title,
             ),
             SizedBox(height: 10),
@@ -28,7 +23,7 @@ class ListOfSymptoms extends StatelessWidget {
               height: 20,
             ),
             Text(
-              "Serious symptoms",
+              S.of(context).seriousSymptoms,
               style: Theme.of(context)
                   .textTheme
                   .title

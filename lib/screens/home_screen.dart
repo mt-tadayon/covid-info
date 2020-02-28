@@ -11,8 +11,27 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  PageController _controller = PageController(
+    initialPage: 0,
+  );
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  void initState() {
+    _controller.addListener(() {
+      setState(() {
+        selectedTab = _controller.page.toInt();
+      });
+    });
+    super.initState();
+  }
+
   int selectedTab = 0;
-  Widget currentView = HomeScreenWidget();
   Text appBarTitle;
 
   @override
@@ -22,7 +41,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(top: 10.0, left: 20, right: 20),
-        child: currentView,
+        child: PageView(
+          controller: _controller,
+          children: <Widget>[
+            HomeScreenWidget(),
+            PreventionWidget(),
+            EmergencyWidget(),
+          ],
+        ),
       ),
       appBar: AppBar(
         title: appBarTitle,
@@ -34,20 +60,30 @@ class _HomeScreenState extends State<HomeScreen> {
             selectedTab = tab;
             switch (selectedTab) {
               case 0:
-                currentView = HomeScreenWidget();
+                _controller.animateToPage(
+                  tab,
+                  duration: Duration(milliseconds: 200),
+                  curve: Curves.linear,
+                );
                 appBarTitle = Text(S.of(context).appBarTitleHome);
                 break;
               case 1:
-                currentView = PreventionWidget();
+                _controller.animateToPage(tab,
+                    duration: Duration(milliseconds: 200),
+                    curve: Curves.easeInOut);
                 appBarTitle = Text(S.of(context).appBarTitlePrevention);
                 break;
               case 2:
-                currentView = EmergencyWidget();
+                _controller.animateToPage(tab,
+                    duration: Duration(milliseconds: 200),
+                    curve: Curves.easeInOut);
                 appBarTitle = Text(S.of(context).appBarTitleEmergency);
                 break;
               default:
                 appBarTitle = Text(S.of(context).appBarTitleHome);
-                currentView = HomeScreenWidget();
+                _controller.animateToPage(0,
+                    duration: Duration(milliseconds: 200),
+                    curve: Curves.easeInOut);
             }
           });
         },
@@ -68,6 +104,4 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-
-  Widget getCurrentWidget() {}
 }

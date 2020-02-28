@@ -1,9 +1,34 @@
 import 'package:covid_19/screens/home/list_of_symptoms.dart';
 import 'package:flutter/material.dart';
 
+const medicineImageUrl = "assets/undraw/medicine.png";
+
 class HomeScreenWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ListOfSymptoms();
+    return ListView(
+      children: <Widget>[
+        Card(
+          elevation: 5.0,
+          child: Column(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "COVID-19 - Coronavirus",
+                  style: Theme.of(context).textTheme.title,
+                ),
+              ),
+              Divider(),
+              Image.asset(medicineImageUrl),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8.0),
+          child: ListOfSymptoms(),
+        )
+      ],
+    );
   }
 }
