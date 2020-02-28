@@ -1,5 +1,5 @@
 {
-  "navigationBarHome": "Home",
+  "navigationBarHome": "Info",
   "@navigationBarHome": {
     "type": "text",
     "placeholders": {}
@@ -14,7 +14,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "appBarTitleHome": "Home",
+  "appBarTitleHome": "Allgemeine Informationen",
   "@appBarTitleHome": {
     "type": "text",
     "placeholders": {}
@@ -116,6 +116,41 @@
   },
   "emergencyNumberDescription": "Sollten Sie sich sehr schlecht fühlen, außerstande sein zum Arzt zu kommen und sofortige Hilfe benötigen. Rufen Sie den Notruf. \n\n Notruf Nummer: 112 \n\n Diese Nummer ist nur in Europa zu erreichen.",
   "@emergencyNumberDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "genericSymptoms": "Normale Symptome",
+  "@genericSymptoms": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "seriousSymptoms": "Schwerwiegende Symptome",
+  "@seriousSymptoms": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomDryCaugh": "Trockener Husten",
+  "@symptomDryCaugh": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomFever": "Fieber",
+  "@symptomFever": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomBreathing": "Beschwerden beim Atmen",
+  "@symptomBreathing": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomPneumonia": "Lungenentzündung",
+  "@symptomPneumonia": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symptomSeriousBreathing": "Schwere Atem Beschwerden",
+  "@symptomSeriousBreathing": {
     "type": "text",
     "placeholders": {}
   }

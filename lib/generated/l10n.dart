@@ -31,7 +31,7 @@ class S {
 
   String get navigationBarHome {
     return Intl.message(
-      'Home',
+      'Info',
       name: 'navigationBarHome',
       desc: '',
       args: [],
@@ -58,7 +58,7 @@ class S {
 
   String get appBarTitleHome {
     return Intl.message(
-      'Home',
+      'General Information',
       name: 'appBarTitleHome',
       desc: '',
       args: [],
@@ -339,6 +339,24 @@ class S {
     return Intl.message(
       'Protect others from getting sick.',
       name: 'protectingOthersTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get genericSymptoms {
+    return Intl.message(
+      'Generic symptoms',
+      name: 'genericSymptoms',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get seriousSymptoms {
+    return Intl.message(
+      'Serious symptoms',
+      name: 'seriousSymptoms',
       desc: '',
       args: [],
     );

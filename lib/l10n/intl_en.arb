@@ -1,5 +1,5 @@
 {
-  "navigationBarHome": "Home",
+  "navigationBarHome": "Info",
   "@navigationBarHome": {
     "type": "text",
     "placeholders": {}
@@ -14,7 +14,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "appBarTitleHome": "Home",
+  "appBarTitleHome": "General Information",
   "@appBarTitleHome": {
     "type": "text",
     "placeholders": {}
@@ -171,6 +171,16 @@
   },
   "protectingOthersTitle": "Protect others from getting sick.",
   "@protectingOthersTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "genericSymptoms": "Generic symptoms",
+  "@genericSymptoms": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "seriousSymptoms": "Serious symptoms",
+  "@seriousSymptoms": {
     "type": "text",
     "placeholders": {}
   }
