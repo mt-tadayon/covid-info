@@ -361,6 +361,132 @@ class S {
       args: [],
     );
   }
+
+  String get covid19Question {
+    return Intl.message(
+      'What is COVID-19?',
+      name: 'covid19Question',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get covid19Answer {
+    return Intl.message(
+      'COVID-19 is an infectious disease caused by the most recently discovered coronavirus. This new virus and infection were unknown before the outbreak began in Wuhan, China, in December 2019.',
+      name: 'covid19Answer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get symtomsQuestion {
+    return Intl.message(
+      'What are the symptoms of COVID-19?',
+      name: 'symtomsQuestion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get symtomsAnswer {
+    return Intl.message(
+      'Common Symptoms are dry cough, fever and difficulty to breath. In rare circumstances, it could lead to Pneumonia and severe breathing difficulties.',
+      name: 'symtomsAnswer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get spreadQuestion {
+    return Intl.message(
+      'How does COVID-19 spread?',
+      name: 'spreadQuestion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get spreadAnswer {
+    return Intl.message(
+      'The virus spread from other persons who are disposed of by the virus. The disease getting transferred by small droplets from the nose or mouth. This can happen if a person with COVID-19 coughs or exhales. This droplet goes on Surfaces and objects and from there with your hands to your eyes, nose and mouth.\n\n Additionally, the GHO recommends a distance of one meter to infected persons, because you can inhale the virus.',
+      name: 'spreadAnswer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get worryQuestion {
+    return Intl.message(
+      'Should I worry about COVID-19?',
+      name: 'worryQuestion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get worryAnswer {
+    return Intl.message(
+      'The risk of getting infected are at the moment low, if you have not travelled from one of the areas where it currently spreads or had contact with people who are affected and went to this region.\n\nHowever, it is understandable that you may feel stressed or anxious during the current situation. It makes sense to search for more information about the topic. Please be mindful that on the internet there is a lot of misinformation at the moment about the COVID-19 virus, try to stay calm and focus on the proven sources.\n\nGood sources for information are your current health provider, the local health authorities and the GHO (Global Health Organisation).\nhttps://www.who.int/\n\nEven if the disease is mild for most people, it can make some people seriously ill. For more information on how to protect yourself, read on at Prevention Tab or go to the following link.\n\nhttps://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public\n',
+      name: 'worryAnswer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get incubationQuestion {
+    return Intl.message(
+      'How long is the incubation period of COVID-19?',
+      name: 'incubationQuestion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get incubationAnswer {
+    return Intl.message(
+      'At the moment the general consents are that the incubation time is up to 14 days. This number is from the GHO und explains that the median is around five days. As soon as there are new informatio, we will update this.',
+      name: 'incubationAnswer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get notToDoQuestion {
+    return Intl.message(
+      'What should I not do?',
+      name: 'notToDoQuestion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get notToDoAnswer {
+    return Intl.message(
+      'Smoking, wearing multiple masks, taking traditional herbal remedies and taking self-medication such as antibiotics ARE NOT effective against COVID-2019 and can be harmful.\n\nIn any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be sure to share your recent travel history with your health care provider.',
+      name: 'notToDoAnswer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get travelQuestion {
+    return Intl.message(
+      'Is the travel into a region save?',
+      name: 'travelQuestion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get travelAnswer {
+    return Intl.message(
+      'Health recommendation for traveling can be found at your local Healthcare provider.',
+      name: 'travelAnswer',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

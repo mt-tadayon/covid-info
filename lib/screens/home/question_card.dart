@@ -19,7 +19,7 @@ class QuestionCard extends StatelessWidget {
         children: <Widget>[
           Padding(
             padding:
-                const EdgeInsets.only(left: 10.0, bottom: 10.0, right: 10.0),
+                const EdgeInsets.only(left: 20.0, bottom: 10.0, right: 20.0),
             child: Text(answer ?? 'Answer'),
           ),
         ],

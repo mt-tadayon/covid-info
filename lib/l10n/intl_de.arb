@@ -153,5 +153,75 @@
   "@symptomSeriousBreathing": {
     "type": "text",
     "placeholders": {}
+  },
+  "covid19Question": "Was ist COVID-19?",
+  "@covid19Question": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "covid19Answer": "COVID-19 ist die Infektionskrankheit, die durch das zuletzt entdeckte Coronavirus verursacht wurde. Dieses neue Virus und diese neue Krankheit waren unbekannt, bevor der Ausbruch im Dezember 2019 in Wuhan, China, begann.",
+  "@covid19Answer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symtomsQuestion": "Was sind die Symptome von COVID-19?",
+  "@symtomsQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symtomsAnswer": "Übliche Symptome sind trockener Husten, Fieber und Atembeschwerden. In seltenen Aufnahmen kann es zu einer Lungenentzündung und sehr schweren Atembeschwerden führen.",
+  "@symtomsAnswer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "spreadQuestion": "Wie verbreitet sich das COVID -19?",
+  "@spreadQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "spreadAnswer": "Das COVID-19 Virus verbreitet sich von anderen Menschen, die mit dem Virus angesteckt sind. Die Krankheit wird durch Tröpfchen übertragen. Das bedeutet durch kleine Tröpfchen die beim Husten, Niesen oder Ausatmen in die Umgebung gestreut werden. Diese Tröpfchen werden von Objekten auf die Hände und darüber in Augen, Nase oder Mund gebracht.\n\nZudem empfiehlt das WHO einen Abstand von einem Meter von kranken Personen, da sich die Bakterien auch durch Einatmen ausbreiten können.\n",
+  "@spreadAnswer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worryQuestion": "Sollte ich mir Sorgen wegen COVID-19 machen?",
+  "@worryQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worryAnswer": "Ihre Chancen sich derzeit anzustecken sind im Moment gering, wenn Sie nicht in den Gegenden gereist sind in denen COVID-19 sich derzeit ausbreitet. Es ist verständlich, wenn Sie sich derzeit Sorgen über die Situation machen und sich mehr Informationen zu dem Thema beschaffen möchten.\n\nBitte achten Sie darauf, dass es im Internet und andere Quellen eine Flut an Falschinformationen über das Thema gibt, versuchen Sie die Ruhe zu bewahren und fokussieren Sie sich auf die korrekten Quellen.\n\nQuellen für korrekte Informationen sind Gesundheitsversicherer, das Gesundheitsministerium und das Robert Koch Institut. Sollten Sie die Englishe Sprache beherrschen ist auch das WHO (Welt Gesundheits Organisation) eine gute Anlaufstelle.\n\nhttps://www.who.int/\n\nAuch wenn die Krankheit für die meisten Menschen schwach ausfällt, kann es einige Menschen schwer krank machen. Für nähere Informationen wie Sie sich schützen können lesen Sie bei Vorbeugende Maßnahmen weiter oder gehen Sie auf folgenden Link.\n\nhttps://www.infektionsschutz.de/\n",
+  "@worryAnswer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "incubationQuestion": "Wie lange ist die Inkubationszeit von COVID -19?",
+  "@incubationQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "incubationAnswer": "Derzeit wird davon ausgegangen, dass die Inkubationszeit bis zu 14 Tagen beträgt. Dieser Wert ist eine Schätzung der WHO und erklärt das es im Durchschnitt etwa 5 Tage dauert. Sobald mehr Daten vorliegen werden diese aktualisiert.",
+  "@incubationAnswer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notToDoQuestion": "Was soll ich nicht tun?",
+  "@notToDoQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notToDoAnswer": "Die folgenden Maßnahmen sind nicht effektiv gegen das COVID-19 Virus und können schädlich sein.\n\n-\tRauchen\n-\tNehmen von traditionellen pflanzlichen Medikamenten\n-\tDas tragen mehrerer Masken\n-\tSelbstmedizinischen Versorgung mit z.B. Antibiotika\n\nSollten Sie Fieber, Husten und Schwierigkeiten zu Atmen haben suchen Sie schnellstmöglich Medizinische Versorgung auf. Um das Risiko schwerer Infektionen zu vermeiden.\n",
+  "@notToDoAnswer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "travelQuestion": "Wo erfährt man, ob eine Reise in ein betroffenes Land noch sicher ist?",
+  "@travelQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "travelAnswer": "Gesundheitsempfehlungen bei Auslandsreisen werden vom Auswärtigen Amt (AA) gegeben. Aktuelle Informationen zu der Sicherheitssituation in einzelnen betroffenen Ländern sind auf den Länderseiten des AA im Internet einzusehen.",
+  "@travelAnswer": {
+    "type": "text",
+    "placeholders": {}
   }
 }

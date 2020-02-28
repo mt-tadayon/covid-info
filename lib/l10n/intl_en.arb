@@ -183,5 +183,75 @@
   "@seriousSymptoms": {
     "type": "text",
     "placeholders": {}
+  },
+  "covid19Question": "What is COVID-19?",
+  "@covid19Question": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "covid19Answer": "COVID-19 is an infectious disease caused by the most recently discovered coronavirus. This new virus and infection were unknown before the outbreak began in Wuhan, China, in December 2019.",
+  "@covid19Answer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symtomsQuestion": "What are the symptoms of COVID-19?",
+  "@symtomsQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "symtomsAnswer": "Common Symptoms are dry cough, fever and difficulty to breath. In rare circumstances, it could lead to Pneumonia and severe breathing difficulties.",
+  "@symtomsAnswer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "spreadQuestion": "How does COVID-19 spread?",
+  "@spreadQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "spreadAnswer": "The virus spread from other persons who are disposed of by the virus. The disease getting transferred by small droplets from the nose or mouth. This can happen if a person with COVID-19 coughs or exhales. This droplet goes on Surfaces and objects and from there with your hands to your eyes, nose and mouth.\n\n Additionally, the GHO recommends a distance of one meter to infected persons, because you can inhale the virus.",
+  "@spreadAnswer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worryQuestion": "Should I worry about COVID-19?",
+  "@worryQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worryAnswer": "The risk of getting infected are at the moment low, if you have not travelled from one of the areas where it currently spreads or had contact with people who are affected and went to this region.\n\nHowever, it is understandable that you may feel stressed or anxious during the current situation. It makes sense to search for more information about the topic. Please be mindful that on the internet there is a lot of misinformation at the moment about the COVID-19 virus, try to stay calm and focus on the proven sources.\n\nGood sources for information are your current health provider, the local health authorities and the GHO (Global Health Organisation).\nhttps://www.who.int/\n\nEven if the disease is mild for most people, it can make some people seriously ill. For more information on how to protect yourself, read on at Prevention Tab or go to the following link.\n\nhttps://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public\n",
+  "@worryAnswer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "incubationQuestion": "How long is the incubation period of COVID-19?",
+  "@incubationQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "incubationAnswer": "At the moment the general consents are that the incubation time is up to 14 days. This number is from the GHO und explains that the median is around five days. As soon as there are new informatio, we will update this.",
+  "@incubationAnswer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notToDoQuestion": "What should I not do?",
+  "@notToDoQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notToDoAnswer": "Smoking, wearing multiple masks, taking traditional herbal remedies and taking self-medication such as antibiotics ARE NOT effective against COVID-2019 and can be harmful.\n\nIn any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be sure to share your recent travel history with your health care provider.",
+  "@notToDoAnswer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "travelQuestion": "Is the travel into a region save?",
+  "@travelQuestion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "travelAnswer": "Health recommendation for traveling can be found at your local Healthcare provider.",
+  "@travelAnswer": {
+    "type": "text",
+    "placeholders": {}
   }
 }
