@@ -1,10 +1,14 @@
+import 'package:covid_19/admob_keys.dart';
 import 'package:covid_19/generated/l10n.dart';
 import 'package:covid_19/screens/emergency/emergency_widget.dart';
 import 'package:covid_19/screens/home/home_widget.dart';
 import 'package:covid_19/screens/prevention/prevention_widget.dart';
+import 'package:device_info/device_info.dart';
 import 'package:firebase_admob/firebase_admob.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:platform/platform.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -25,15 +29,14 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
+    String platformSpecificAdId = getCorrectAdID();
+
     myBanner = BannerAd(
-        adUnitId: BannerAd.testAdUnitId,
+        adUnitId: platformSpecificAdId,
         size: AdSize.smartBanner,
-        listener: (MobileAdEvent event) {
-          if (event == MobileAdEvent.loaded) {
-            setState(() {
-              bannerHeight = myBanner.size.height.toDouble();
-            });
-          }
+        listener: (event) async {
+          bannerHeight = await getAdSize();
+          setState(() {});
         });
 
     myBanner
@@ -51,10 +54,24 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
   }
 
+  String getCorrectAdID() {
+    var platformSpecificAdId = BannerAd.testAdUnitId;
+    if (kReleaseMode) {
+      if (LocalPlatform().isAndroid) {
+        platformSpecificAdId = androidAdID;
+      }
+
+      if (LocalPlatform().isIOS) {
+        platformSpecificAdId = iOSAdID;
+      }
+    }
+    return platformSpecificAdId;
+  }
+
   BannerAd myBanner;
+  double bannerHeight = 0;
   int selectedTab = 0;
   Text appBarTitle;
-  double bannerHeight = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
           top: 10.0,
           left: 20,
           right: 20,
-          bottom: 60,
+          bottom: bannerHeight,
         ),
         child: PageView(
           controller: _controller,
@@ -130,5 +147,32 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
     );
+  }
+
+  Future<double> getAdSize() async {
+    var deviceHeight = MediaQuery.of(context).size.height;
+    var localPlatform = LocalPlatform();
+    if (localPlatform.isAndroid) {
+      if (deviceHeight <= 400) {
+        return 32;
+      } else if (deviceHeight > 400 && deviceHeight <= 720) {
+        return 50;
+      } else {
+        return 90;
+      }
+    } else if (localPlatform.isIOS) {
+      DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
+      IosDeviceInfo info = await deviceInfo.iosInfo;
+      if (info.name.toLowerCase().contains("ipad")) {
+        return 90;
+      }
+
+      if (MediaQuery.of(context).orientation == Orientation.portrait) {
+        return 60;
+      } else if (MediaQuery.of(context).orientation == Orientation.landscape) {
+        return 32;
+      }
+    }
+    return 0;
   }
 }

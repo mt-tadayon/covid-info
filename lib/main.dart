@@ -10,9 +10,9 @@ import 'package:platform/platform.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   var id;
-  if(LocalPlatform().isAndroid) id = appIdAndroid;
-  if(LocalPlatform().isIOS) id = appIdiOS;
-  if(!LocalPlatform().isAndroid && !LocalPlatform().isIOS) throw Error();
+  if (LocalPlatform().isAndroid) id = appIdAndroid;
+  if (LocalPlatform().isIOS) id = appIdiOS;
+  if (!LocalPlatform().isAndroid && !LocalPlatform().isIOS) throw Error();
 
   FirebaseAdMob.instance.initialize(appId: id);
   runApp(MyApp());
