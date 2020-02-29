@@ -101,51 +101,6 @@ class S {
     );
   }
 
-  String get symptomDryCaugh {
-    return Intl.message(
-      'Dry cough',
-      name: 'symptomDryCaugh',
-      desc: '',
-      args: [],
-    );
-  }
-
-  String get symptomPneumonia {
-    return Intl.message(
-      'Pneumonia',
-      name: 'symptomPneumonia',
-      desc: '',
-      args: [],
-    );
-  }
-
-  String get symptomSeriousBreathing {
-    return Intl.message(
-      'Serious breathing difficulties',
-      name: 'symptomSeriousBreathing',
-      desc: '',
-      args: [],
-    );
-  }
-
-  String get symptomFever {
-    return Intl.message(
-      'Fever',
-      name: 'symptomFever',
-      desc: '',
-      args: [],
-    );
-  }
-
-  String get symptomBreathing {
-    return Intl.message(
-      'Difficulty with breathing',
-      name: 'symptomBreathing',
-      desc: '',
-      args: [],
-    );
-  }
-
   String get symptomExposedPerson {
     return Intl.message(
       'Have you been exposed to someone of the infected region?',
@@ -339,24 +294,6 @@ class S {
     return Intl.message(
       'Protect others from getting sick.',
       name: 'protectingOthersTitle',
-      desc: '',
-      args: [],
-    );
-  }
-
-  String get genericSymptoms {
-    return Intl.message(
-      'Generic symptoms',
-      name: 'genericSymptoms',
-      desc: '',
-      args: [],
-    );
-  }
-
-  String get seriousSymptoms {
-    return Intl.message(
-      'Serious symptoms',
-      name: 'seriousSymptoms',
       desc: '',
       args: [],
     );

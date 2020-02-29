@@ -119,41 +119,6 @@
     "type": "text",
     "placeholders": {}
   },
-  "genericSymptoms": "Normale Symptome",
-  "@genericSymptoms": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "seriousSymptoms": "Schwerwiegende Symptome",
-  "@seriousSymptoms": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "symptomDryCaugh": "Trockener Husten",
-  "@symptomDryCaugh": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "symptomFever": "Fieber",
-  "@symptomFever": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "symptomBreathing": "Beschwerden beim Atmen",
-  "@symptomBreathing": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "symptomPneumonia": "Lungenentzündung",
-  "@symptomPneumonia": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "symptomSeriousBreathing": "Schwere Atem Beschwerden",
-  "@symptomSeriousBreathing": {
-    "type": "text",
-    "placeholders": {}
-  },
   "covid19Question": "Was ist COVID-19?",
   "@covid19Question": {
     "type": "text",

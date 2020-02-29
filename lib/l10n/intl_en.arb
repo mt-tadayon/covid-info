@@ -39,31 +39,6 @@
     "type": "text",
     "placeholders": {}
   },
-  "symptomDryCaugh": "Dry cough",
-  "@symptomDryCaugh": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "symptomPneumonia": "Pneumonia",
-  "@symptomPneumonia": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "symptomSeriousBreathing": "Serious breathing difficulties",
-  "@symptomSeriousBreathing": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "symptomFever": "Fever",
-  "@symptomFever": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "symptomBreathing": "Difficulty with breathing",
-  "@symptomBreathing": {
-    "type": "text",
-    "placeholders": {}
-  },
   "symptomExposedPerson": "Have you been exposed to someone of the infected region?",
   "@symptomExposedPerson": {
     "type": "text",
@@ -171,16 +146,6 @@
   },
   "protectingOthersTitle": "Protect others from getting sick.",
   "@protectingOthersTitle": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "genericSymptoms": "Generic symptoms",
-  "@genericSymptoms": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "seriousSymptoms": "Serious symptoms",
-  "@seriousSymptoms": {
     "type": "text",
     "placeholders": {}
   },
