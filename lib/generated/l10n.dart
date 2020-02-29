@@ -112,7 +112,7 @@ class S {
 
   String get symptomExposedRegion {
     return Intl.message(
-      'Have you been in one the infected region?',
+      'Have you been in one of the infected region?',
       name: 'symptomExposedRegion',
       desc: '',
       args: [],
@@ -184,7 +184,7 @@ class S {
 
   String get washHandTitle {
     return Intl.message(
-      'Hände regelmäßig waschen',
+      'Wash your hands regularly',
       name: 'washHandTitle',
       desc: '',
       args: [],
@@ -193,7 +193,7 @@ class S {
 
   String get washHandText {
     return Intl.message(
-      'Waschen Sie Ihre Hände regelmäßig und gründlich mit Wasser und Seife für 20 Sekunden.',
+      'Wash your hands regularly with water and soap for 20 seconds',
       name: 'washHandText',
       desc: '',
       args: [],
@@ -202,7 +202,7 @@ class S {
 
   String get keepDistanceTitle {
     return Intl.message(
-      'Halten Sie 1-2 Meter Abstand',
+      'Keep one-meter distance',
       name: 'keepDistanceTitle',
       desc: '',
       args: [],
@@ -211,7 +211,7 @@ class S {
 
   String get keepDistanceText {
     return Intl.message(
-      'Halten Sie einen Abstand von mindestens ein bis zwei Meter zwischen sich und Personen ein, die husten oder niesen.',
+      'Keep at least one-meter distance between yourself and someone who is sneezing or coughing',
       name: 'keepDistanceText',
       desc: '',
       args: [],
@@ -220,7 +220,7 @@ class S {
 
   String get avoidTouchingTitle {
     return Intl.message(
-      'Berühren Sie nicht Augen, Nase und Mund',
+      'Don\'t touch eyes, nose and mouth',
       name: 'avoidTouchingTitle',
       desc: '',
       args: [],
@@ -229,7 +229,7 @@ class S {
 
   String get avoidTouchingText {
     return Intl.message(
-      'Hände berühren viele Oberflächen und können Viren aufnehmen. Einmal kontaminiert, können Hände das Virus auf Ihre Augen, Nase oder Mund übertragen. Von dort kann das Virus in Ihren Körper eindringen und Sie krank machen.',
+      'You touch many surfaces with your hands and can pick up viruses. If your hands are polluted, they can transfer the virus to your mouth, eyes and nose. These are the best way for viruses to enter your body and make you sick.',
       name: 'avoidTouchingText',
       desc: '',
       args: [],
@@ -238,7 +238,7 @@ class S {
 
   String get respiratoryHygieneTitle {
     return Intl.message(
-      'Husten und Niesen in Elenbogen',
+      'Follow Respiratory Hygiene',
       name: 'respiratoryHygieneTitle',
       desc: '',
       args: [],
@@ -247,7 +247,7 @@ class S {
 
   String get respiratoryHygieneText {
     return Intl.message(
-      'Stellen Sie sicher, dass Sie beim Husten oder Niesen Ihr Mund und Nase mit gebeugtem Ellbogen oder Taschentuch bedecken. Entsorgen Sie das gebrauchte Taschentuch danach sofort.',
+      'That means making sure, you and people around you to cover mouth and nose with your bent elbow or tissue while coughing or sneezing. Don\'t forget to bin the used tissue directly.',
       name: 'respiratoryHygieneText',
       desc: '',
       args: [],
@@ -256,7 +256,7 @@ class S {
 
   String get stayInformedTitle {
     return Intl.message(
-      'Informieren Sie sich und befolgen Sie die Ratschläge des Robert Koch Institutes',
+      'Stay informed',
       name: 'stayInformedTitle',
       desc: '',
       args: [],
@@ -265,7 +265,7 @@ class S {
 
   String get stayInformedText {
     return Intl.message(
-      'Bleiben Sie über die neuesten Entwicklungen zu COVID-19 auf dem Laufenden. Befolgen Sie die Anweisungen Ihrer Gesundheitsbehörde, damit Sie sich und andere vor COVID-19 schützen können.',
+      'Follow the advice and directions from trustworthy resources such as your healthcare provider, WHO or GHO to protect yourself and others from COVID-19',
       name: 'stayInformedText',
       desc: '',
       args: [],

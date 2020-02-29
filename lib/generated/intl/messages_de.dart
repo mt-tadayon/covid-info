@@ -35,7 +35,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "incubationQuestion" : MessageLookupByLibrary.simpleMessage("Wie lange ist die Inkubationszeit von COVID -19?"),
     "infectionInformation" : MessageLookupByLibrary.simpleMessage("Wenn Sie Fieber, Husten und Probleme beim Atmen haben, rufen Sie zunächst bei Ihrem Hausarzt an. Folgen Sie den Anweisungen Ihrer örtlichen Gesundheitsamtes."),
     "keepDistanceText" : MessageLookupByLibrary.simpleMessage("Versuchen Sie einen Abstand von mindestens ein bis zwei Meter, zwischen sich und Personen, die Husten oder Niesen, einzuhalten."),
-    "keepDistanceTitle" : MessageLookupByLibrary.simpleMessage("Halten Sie 1-2 Meter Abstand"),
+    "keepDistanceTitle" : MessageLookupByLibrary.simpleMessage("Halten Sie ein Meter Abstand"),
     "navigationBarHome" : MessageLookupByLibrary.simpleMessage("Info"),
     "navigationEmergency" : MessageLookupByLibrary.simpleMessage("Notfall"),
     "navigationPrevention" : MessageLookupByLibrary.simpleMessage("Prevention"),

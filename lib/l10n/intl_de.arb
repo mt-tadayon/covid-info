@@ -39,7 +39,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "keepDistanceTitle": "Halten Sie 1-2 Meter Abstand",
+  "keepDistanceTitle": "Halten Sie ein Meter Abstand",
   "@keepDistanceTitle": {
     "type": "text",
     "placeholders": {}
