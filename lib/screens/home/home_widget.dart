@@ -19,7 +19,7 @@ class HomeWidget extends StatelessWidget {
               ),
             ),
             Divider(),
-            Image.asset(medicineImageUrl),
+            ConstrainedBox(child: Image.asset(medicineImageUrl), constraints: BoxConstraints(maxHeight: 300),),
           ],
         ),
         QuestionCard(
