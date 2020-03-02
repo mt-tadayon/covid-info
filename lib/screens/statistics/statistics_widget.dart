@@ -1,8 +1,18 @@
+import 'package:covid_19/Modells/countryModel.dart';
 import 'package:covid_19/Widgets/card_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
-class StatisticsWidget extends StatelessWidget {
+List<CountryModel> countriesResult = [];
+
+class StatisticsWidget extends StatefulWidget {
+  @override
+  _StatisticsWidgetState createState() => _StatisticsWidgetState();
+}
+
+class _StatisticsWidgetState extends State<StatisticsWidget> {
+  TextEditingController _searchCountryController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -15,6 +25,18 @@ Death: 2000
 Recoverd: 15874
         ''',
         ),
+        Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: TextField(
+            controller: _searchCountryController,
+            decoration: InputDecoration(
+              hintText: 'Country name',
+            ),
+            onChanged: (value) {
+              print(value);
+            },
+          ),
+        ),
         Card(
           elevation: 5.0,
           child: SingleChildScrollView(
@@ -26,34 +48,14 @@ Recoverd: 15874
                 DataColumn(label: Text('Recoverd')),
                 DataColumn(label: Text('Deaths')),
               ],
-              rows: <DataRow>[
-                DataRow(cells: [
-                  DataCell(Text('Germany')),
-                  DataCell(Text('150')),
-                  DataCell(Text('58')),
-                  DataCell(Text('0')),
-                ]),DataRow(cells: [
-                  DataCell(Text('Iran')),
-                  DataCell(Text('150')),
-                  DataCell(Text('58')),
-                  DataCell(Text('0')),
-                ]), DataRow(cells: [
-                  DataCell(Text('France')),
-                  DataCell(Text('150')),
-                  DataCell(Text('58')),
-                  DataCell(Text('0')),
-                ]),DataRow(cells: [
-                  DataCell(Text('Italy')),
-                  DataCell(Text('150')),
-                  DataCell(Text('58')),
-                  DataCell(Text('0')),
-                ]),DataRow(cells: [
-                  DataCell(Text('New Zealand')),
-                  DataCell(Text('150')),
-                  DataCell(Text('58')),
-                  DataCell(Text('0')),
-                ]),
-              ],
+              rows: countriesResult
+                  .map((data) => DataRow(cells: [
+                        DataCell(Text(data.countryName)),
+                        DataCell(Text(data.confirmed.toString())),
+                        DataCell(Text(data.recovered.toString())),
+                        DataCell(Text(data.death.toString()))
+                      ]))
+                  .toList(),
             ),
           ),
         )
