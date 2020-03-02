@@ -93,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
             HomeWidget(),
             PreventionWidget(),
             EmergencyWidget(),
-            StatisticsWidget(),
+            StatisticsWidget()
           ],
         ),
       ),
