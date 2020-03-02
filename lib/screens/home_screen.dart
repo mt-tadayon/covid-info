@@ -3,6 +3,7 @@ import 'package:covid_19/generated/l10n.dart';
 import 'package:covid_19/screens/emergency/emergency_widget.dart';
 import 'package:covid_19/screens/home/home_widget.dart';
 import 'package:covid_19/screens/prevention/prevention_widget.dart';
+import 'package:covid_19/screens/statistics/statistics_widget.dart';
 import 'package:device_info/device_info.dart';
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/foundation.dart';
@@ -49,6 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
     _controller.addListener(() {
       setState(() {
         selectedTab = _controller.page.toInt();
+        setAppBarTitle(selectedTab);
       });
     });
     super.initState();
@@ -91,6 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
             HomeWidget(),
             PreventionWidget(),
             EmergencyWidget(),
+            StatisticsWidget(),
           ],
         ),
       ),
@@ -102,6 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: (tab) {
           setState(() {
             selectedTab = tab;
+            setAppBarTitle(tab);
             switch (selectedTab) {
               case 0:
                 _controller.animateToPage(
@@ -109,22 +113,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   duration: Duration(milliseconds: 200),
                   curve: Curves.linear,
                 );
-                appBarTitle = Text(S.of(context).appBarTitleHome);
                 break;
               case 1:
                 _controller.animateToPage(tab,
                     duration: Duration(milliseconds: 200),
                     curve: Curves.easeInOut);
-                appBarTitle = Text(S.of(context).appBarTitlePrevention);
                 break;
               case 2:
                 _controller.animateToPage(tab,
                     duration: Duration(milliseconds: 200),
                     curve: Curves.easeInOut);
-                appBarTitle = Text(S.of(context).appBarTitleEmergency);
                 break;
               default:
-                appBarTitle = Text(S.of(context).appBarTitleHome);
                 _controller.animateToPage(0,
                     duration: Duration(milliseconds: 200),
                     curve: Curves.easeInOut);
@@ -174,5 +174,21 @@ class _HomeScreenState extends State<HomeScreen> {
       }
     }
     return 0;
+  }
+
+  void setAppBarTitle(int tab) {
+    switch (tab) {
+      case 0:
+        appBarTitle = Text(S.of(context).appBarTitleHome);
+        break;
+      case 1:
+        appBarTitle = Text(S.of(context).appBarTitlePrevention);
+        break;
+      case 2:
+        appBarTitle = Text(S.of(context).appBarTitleEmergency);
+        break;
+      default:
+        appBarTitle = Text(S.of(context).appBarTitleHome);
+    }
   }
 }

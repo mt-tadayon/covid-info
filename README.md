@@ -1,3 +1,5 @@
+[![Codemagic build status](https://api.codemagic.io/apps/5e5b5032e389932f9f06cc60/5e5b5032e389932f9f06cc5f/status_badge.svg)](https://codemagic.io/apps/5e5b5032e389932f9f06cc60/5e5b5032e389932f9f06cc5f/latest_build)
+
 # covid_19
 
 A new Flutter project.
