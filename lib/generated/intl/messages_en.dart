@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "appBarTitleEmergency" : MessageLookupByLibrary.simpleMessage("Emergency"),
     "appBarTitleHome" : MessageLookupByLibrary.simpleMessage("General Information"),
     "appBarTitlePrevention" : MessageLookupByLibrary.simpleMessage("Prevention"),
+    "appBarTitleStatistic" : MessageLookupByLibrary.simpleMessage("Statistic"),
     "avoidTouchingText" : MessageLookupByLibrary.simpleMessage("You touch many surfaces with your hands and can pick up viruses. If your hands are polluted, they can transfer the virus to your mouth, eyes and nose. These are the best way for viruses to enter your body and make you sick."),
     "avoidTouchingTitle" : MessageLookupByLibrary.simpleMessage("Don\'t touch eyes, nose and mouth"),
     "checkSymptoms" : MessageLookupByLibrary.simpleMessage("Covid-19"),

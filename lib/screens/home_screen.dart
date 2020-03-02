@@ -115,11 +115,18 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
                 break;
               case 1:
+                _controller.animateToPage(
+                  tab,
+                  duration: Duration(milliseconds: 200),
+                  curve: Curves.linear,
+                );
+                break;
+              case 2:
                 _controller.animateToPage(tab,
                     duration: Duration(milliseconds: 200),
                     curve: Curves.easeInOut);
                 break;
-              case 2:
+              case 3:
                 _controller.animateToPage(tab,
                     duration: Duration(milliseconds: 200),
                     curve: Curves.easeInOut);
@@ -135,6 +142,10 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(FontAwesome5.hospital),
             title: Text(S.of(context).navigationBarHome),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(FontAwesome5Solid.chart_line),
+            title: Text(S.of(context).navigationStatistic),
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesome5Solid.hands),
@@ -180,6 +191,11 @@ class _HomeScreenState extends State<HomeScreen> {
     switch (tab) {
       case 0:
         appBarTitle = Text(S.of(context).appBarTitleHome);
+        break;
+      case 1:
+        appBarTitle = Text(S
+            .of(context)
+            .appBarTitleHome);
         break;
       case 1:
         appBarTitle = Text(S.of(context).appBarTitlePrevention);

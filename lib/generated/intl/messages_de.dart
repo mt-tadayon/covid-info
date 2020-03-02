@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "appBarTitleEmergency" : MessageLookupByLibrary.simpleMessage("Notfall"),
     "appBarTitleHome" : MessageLookupByLibrary.simpleMessage("Allgemeine Informationen"),
     "appBarTitlePrevention" : MessageLookupByLibrary.simpleMessage("Vorbeugende Maßnahmen"),
+    "appBarTitleStatistic" : MessageLookupByLibrary.simpleMessage("Statistik"),
     "avoidTouchingText" : MessageLookupByLibrary.simpleMessage("Hände berühren viele Oberflächen und können Viren aufnehmen. Einmal kontaminiert, können Hände das Virus auf Ihre Augen, Nase oder Mund übertragen. Von dort kann das Virus in Ihren Körper eindringen und Sie krank machen."),
     "avoidTouchingTitle" : MessageLookupByLibrary.simpleMessage("Berühren Sie nicht Augen, Nase und Mund"),
     "considerWearingMask" : MessageLookupByLibrary.simpleMessage("Überlegen Sie sich, eine Mund-Nasen-Maske zu tragen um Freunde und Verwandte sowie Rettungspersonal zu schützen."),

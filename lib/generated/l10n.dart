@@ -74,6 +74,15 @@ class S {
     );
   }
 
+  String get appBarTitleStatistic {
+    return Intl.message(
+      'Statistic',
+      name: 'appBarTitleStatistic',
+      desc: '',
+      args: [],
+    );
+  }
+
   String get appBarTitlePrevention {
     return Intl.message(
       'Prevention',
