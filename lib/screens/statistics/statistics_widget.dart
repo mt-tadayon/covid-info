@@ -15,6 +15,48 @@ Death: 2000
 Recoverd: 15874
         ''',
         ),
+        Card(
+          elevation: 5.0,
+          child: SingleChildScrollView(
+            child: DataTable(
+              columnSpacing: 10.0,
+              columns: <DataColumn>[
+                DataColumn(label: Text('Country')),
+                DataColumn(label: Text('Confirmed')),
+                DataColumn(label: Text('Recoverd')),
+                DataColumn(label: Text('Deaths')),
+              ],
+              rows: <DataRow>[
+                DataRow(cells: [
+                  DataCell(Text('Germany')),
+                  DataCell(Text('150')),
+                  DataCell(Text('58')),
+                  DataCell(Text('0')),
+                ]),DataRow(cells: [
+                  DataCell(Text('Iran')),
+                  DataCell(Text('150')),
+                  DataCell(Text('58')),
+                  DataCell(Text('0')),
+                ]), DataRow(cells: [
+                  DataCell(Text('France')),
+                  DataCell(Text('150')),
+                  DataCell(Text('58')),
+                  DataCell(Text('0')),
+                ]),DataRow(cells: [
+                  DataCell(Text('Italy')),
+                  DataCell(Text('150')),
+                  DataCell(Text('58')),
+                  DataCell(Text('0')),
+                ]),DataRow(cells: [
+                  DataCell(Text('New Zealand')),
+                  DataCell(Text('150')),
+                  DataCell(Text('58')),
+                  DataCell(Text('0')),
+                ]),
+              ],
+            ),
+          ),
+        )
       ],
     );
   }
