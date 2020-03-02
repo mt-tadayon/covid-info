@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "navigationBarHome" : MessageLookupByLibrary.simpleMessage("Info"),
     "navigationEmergency" : MessageLookupByLibrary.simpleMessage("Notfall"),
     "navigationPrevention" : MessageLookupByLibrary.simpleMessage("Prevention"),
+    "navigationStatistic" : MessageLookupByLibrary.simpleMessage("Statistik"),
     "notToDoAnswer" : MessageLookupByLibrary.simpleMessage("Die folgenden Maßnahmen sind nicht effektiv gegen das COVID-19 Virus und können schädlich sein.\n\n-\tRauchen\n-\tNehmen von traditionellen pflanzlichen Medikamenten\n-\tDas tragen mehrerer Masken\n-\tSelbstmedizinischen Versorgung mit z.B. Antibiotika\n\nSollten Sie Fieber, Husten und Schwierigkeiten zu Atmen haben suchen Sie schnellstmöglich Medizinische Versorgung auf. Um das Risiko schwerer Infektionen zu vermeiden.\n"),
     "notToDoQuestion" : MessageLookupByLibrary.simpleMessage("Was soll ich nicht tun?"),
     "protectingOthersTitle" : MessageLookupByLibrary.simpleMessage("Schützen Sie andere vor dem Erkranken."),

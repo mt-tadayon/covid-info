@@ -4,6 +4,11 @@
     "type": "text",
     "placeholders": {}
   },
+  "navigationStatistic": "Statistik",
+  "@navigationStatistic": {
+    "type": "text",
+    "placeholders": {}
+  },
   "navigationPrevention": "Prevention",
   "@navigationPrevention": {
     "type": "text",

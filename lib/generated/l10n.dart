@@ -38,6 +38,15 @@ class S {
     );
   }
 
+  String get navigationStatistic {
+    return Intl.message(
+      'Statistic',
+      name: 'navigationStatistic',
+      desc: '',
+      args: [],
+    );
+  }
+
   String get navigationPrevention {
     return Intl.message(
       'Prevention',
