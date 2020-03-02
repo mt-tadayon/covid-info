@@ -3,8 +3,6 @@ import 'package:covid_19/Widgets/card_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
-List<CountryModel> countriesResult = [];
-
 class StatisticsWidget extends StatefulWidget {
   @override
   _StatisticsWidgetState createState() => _StatisticsWidgetState();
@@ -12,6 +10,9 @@ class StatisticsWidget extends StatefulWidget {
 
 class _StatisticsWidgetState extends State<StatisticsWidget> {
   TextEditingController _searchCountryController = TextEditingController();
+  List<CountryModel> countriesResult = [];
+
+  String searchCountryName = '';
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,8 @@ Recoverd: 15874
               hintText: 'Country name',
             ),
             onChanged: (value) {
-              print(value);
+              searchCountryName = value;
+              setState(() {});
             },
           ),
         ),
@@ -49,6 +51,15 @@ Recoverd: 15874
                 DataColumn(label: Text('Deaths')),
               ],
               rows: countriesResult
+                  .where((data) {
+                    if (searchCountryName.isEmpty)
+                      return true;
+                    else {
+                      return data.countryName
+                          .toUpperCase()
+                          .contains(searchCountryName.toUpperCase());
+                    }
+                  })
                   .map((data) => DataRow(cells: [
                         DataCell(Text(data.countryName)),
                         DataCell(Text(data.confirmed.toString())),
