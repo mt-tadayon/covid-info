@@ -1,3 +1,5 @@
+import 'package:covid_19/Modells/countryModel.dart';
+import 'package:covid_19/Service/fetch_data.dart';
 import 'package:covid_19/admob_keys.dart';
 import 'package:covid_19/generated/l10n.dart';
 import 'package:covid_19/screens/emergency/emergency_widget.dart';
@@ -18,6 +20,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  Future<List<CountryModel>> futureCountriesResult;
+
   PageController _controller = PageController(
     initialPage: 0,
   );
@@ -31,6 +35,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
+    futureCountriesResult = fetchCountryData();
+
     String platformSpecificAdId = getCorrectAdID();
 
     myBanner = BannerAd(
@@ -83,16 +89,17 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.only(
-          top: 10.0,
-          left: 20,
-          right: 20,
           bottom: bannerHeight,
         ),
         child: PageView(
           controller: _controller,
           children: <Widget>[
             HomeWidget(),
-            StatisticsWidget(),
+            FutureBuilder<List<CountryModel>>(
+              future: futureCountriesResult,
+              builder: (BuildContext context, AsyncSnapshot<List<CountryModel>> snapshot) {
+                return StatisticsWidget(snapshot: snapshot);
+              }),
             PreventionWidget(),
             EmergencyWidget(),
           ],
