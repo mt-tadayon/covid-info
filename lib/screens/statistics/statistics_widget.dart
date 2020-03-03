@@ -1,5 +1,6 @@
 import 'package:covid_19/Modells/countryModel.dart';
 import 'package:covid_19/Widgets/card_widget.dart';
+import 'package:covid_19/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:covid_19/Service/fetch_data.dart';
@@ -31,10 +32,10 @@ class _StatisticsWidgetState extends State<StatisticsWidget> {
           return ListView(children: <Widget>[
             CardWidget(
               icon: Icon(FontAwesome5Solid.globe),
-              title: 'Globale Statistics',
-              text: '''Infections: ${snapshot.data.first.confirmed}
-Death: ${snapshot.data.first.death}
-Recoverd: ${snapshot.data.first.recovered}
+              title: S.of(context).globalStatisticTitle,
+              text: '''${S.of(context).confirmedTitle}: ${snapshot.data.first.confirmed}
+${S.of(context).deathsTitle}: ${snapshot.data.first.death}
+${S.of(context).recoveredTitle}: ${snapshot.data.first.recovered}
           ''',
             ),
             Padding(
@@ -42,7 +43,7 @@ Recoverd: ${snapshot.data.first.recovered}
               child: TextField(
                 controller: _searchCountryController,
                 decoration: InputDecoration(
-                  hintText: 'Country name',
+                  hintText: S.of(context).countryNameHintText,
                 ),
                 onChanged: (value) {
                   searchCountryName = value;
@@ -56,10 +57,10 @@ Recoverd: ${snapshot.data.first.recovered}
                 child: DataTable(
                   columnSpacing: 10.0,
                   columns: <DataColumn>[
-                    DataColumn(label: Text('Country')),
-                    DataColumn(label: Text('Confirmed')),
-                    DataColumn(label: Text('Recoverd')),
-                    DataColumn(label: Text('Deaths')),
+                    DataColumn(label: Text(S.of(context).countryTitle)),
+                    DataColumn(label: Text(S.of(context).confirmedTitle)),
+                    DataColumn(label: Text(S.of(context).recoveredTitle)),
+                    DataColumn(label: Text(S.of(context).deathsTitle)),
                   ],
                   rows: snapshot.data
                       .where((data) {
@@ -84,7 +85,14 @@ Recoverd: ${snapshot.data.first.recovered}
             )
           ]);
         } else if (snapshot.hasError) {
-          return Text('${snapshot.error}');
+          return Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Icon(FontAwesome5Solid.exclamation, color: Colors.grey, size: 40.0,),
+              SizedBox(height: 20.0,),
+              Text(S.of(context).errorMessage),
+            ],
+          );
         }
         return Center(child: CircularProgressIndicator());
       },

@@ -228,5 +228,40 @@
   "@travelAnswer": {
     "type": "text",
     "placeholders": {}
+  },
+  "errorMessage": "Something went wrong, please try later again.",
+  "@errorMessage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "globalStatisticTitle": "Global Statistics",
+  "@globalStatisticTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmedTitle": "Confirmed",
+  "@confirmedTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deathsTitle": "Deaths",
+  "@deathsTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "recoveredTitle": "Recovered",
+  "@recoveredTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "countryNameHintText": "Country Name",
+  "@countryNameHintText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "countryTitle": "Country",
+  "@countryTitle": {
+    "type": "text",
+    "placeholders": {}
   }
 }
