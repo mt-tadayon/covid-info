@@ -33,12 +33,14 @@ class _StatisticsWidgetState extends State<StatisticsWidget> {
           return ListView(children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text('*Information from ${DateFormat.yMd().format(DateTime.now())} - UTC +1'),
+              child: Text(
+                  '${S.of(context).informationFromText} ${DateFormat.yMd().format(DateTime.now())} - UTC +1'),
             ),
             CardWidget(
               icon: Icon(FontAwesome5Solid.globe),
               title: S.of(context).globalStatisticTitle,
-              text: '''${S.of(context).confirmedTitle}: ${snapshot.data.first.confirmed}
+              text:
+                  '''${S.of(context).confirmedTitle}: ${snapshot.data.first.confirmed}
 ${S.of(context).deathsTitle}: ${snapshot.data.first.death}
 ${S.of(context).recoveredTitle}: ${snapshot.data.first.recovered}
           ''',
@@ -48,6 +50,9 @@ ${S.of(context).recoveredTitle}: ${snapshot.data.first.recovered}
               child: TextField(
                 controller: _searchCountryController,
                 decoration: InputDecoration(
+                  prefixIcon: Icon(
+                    FontAwesome5Solid.search,
+                  ),
                   hintText: S.of(context).countryNameHintText,
                 ),
                 onChanged: (value) {
@@ -93,8 +98,14 @@ ${S.of(context).recoveredTitle}: ${snapshot.data.first.recovered}
           return Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Icon(FontAwesome5Solid.exclamation, color: Colors.grey, size: 40.0,),
-              SizedBox(height: 20.0,),
+              Icon(
+                FontAwesome5Solid.exclamation,
+                color: Colors.grey,
+                size: 40.0,
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
               Text(S.of(context).errorMessage),
             ],
           );

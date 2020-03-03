@@ -233,5 +233,10 @@
   "@countryTitle": {
     "type": "text",
     "placeholders": {}
+  },
+  "informationFromText": "Informationen vom",
+  "@informationFromText": {
+    "type": "text",
+    "placeholders": {}
   }
 }

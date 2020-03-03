@@ -505,6 +505,15 @@ class S {
       args: [],
     );
   }
+
+  String get informationFromText {
+    return Intl.message(
+      'Information from',
+      name: 'informationFromText',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
