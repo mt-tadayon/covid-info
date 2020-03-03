@@ -4,6 +4,7 @@ import 'package:covid_19/screens/emergency/emergency_widget.dart';
 import 'package:covid_19/screens/home/home_widget.dart';
 import 'package:covid_19/screens/prevention/prevention_widget.dart';
 import 'package:covid_19/screens/statistics/statistics_widget.dart';
+import 'package:covid_19/theme.dart';
 import 'package:device_info/device_info.dart';
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/foundation.dart';
@@ -91,9 +92,9 @@ class _HomeScreenState extends State<HomeScreen> {
           controller: _controller,
           children: <Widget>[
             HomeWidget(),
+            StatisticsWidget(),
             PreventionWidget(),
             EmergencyWidget(),
-            StatisticsWidget()
           ],
         ),
       ),
@@ -102,6 +103,10 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedTab,
+        type: BottomNavigationBarType.shifting,
+        selectedItemColor: defaultColor.shade500,
+        unselectedItemColor: Colors.grey,
+        showUnselectedLabels: true,
         onTap: (tab) {
           setState(() {
             selectedTab = tab;
@@ -115,19 +120,26 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
                 break;
               case 1:
-                _controller.animateToPage(tab,
-                    duration: Duration(milliseconds: 200),
-                    curve: Curves.easeInOut);
+                _controller.animateToPage(
+                  tab,
+                  duration: Duration(milliseconds: 200),
+                  curve: Curves.linear,
+                );
                 break;
               case 2:
                 _controller.animateToPage(tab,
                     duration: Duration(milliseconds: 200),
-                    curve: Curves.easeInOut);
+                    curve: Curves.linear);
+                break;
+              case 3:
+                _controller.animateToPage(tab,
+                    duration: Duration(milliseconds: 200),
+                    curve: Curves.linear);
                 break;
               default:
                 _controller.animateToPage(0,
                     duration: Duration(milliseconds: 200),
-                    curve: Curves.easeInOut);
+                    curve: Curves.linear);
             }
           });
         },
@@ -135,6 +147,10 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(FontAwesome5.hospital),
             title: Text(S.of(context).navigationBarHome),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(FontAwesome5Solid.chart_line),
+            title: Text(S.of(context).navigationStatistic),
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesome5Solid.hands),
@@ -182,9 +198,12 @@ class _HomeScreenState extends State<HomeScreen> {
         appBarTitle = Text(S.of(context).appBarTitleHome);
         break;
       case 1:
-        appBarTitle = Text(S.of(context).appBarTitlePrevention);
+        appBarTitle = Text(S.of(context).appBarTitleStatistic);
         break;
       case 2:
+        appBarTitle = Text(S.of(context).appBarTitlePrevention);
+        break;
+      case 3:
         appBarTitle = Text(S.of(context).appBarTitleEmergency);
         break;
       default:
