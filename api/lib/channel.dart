@@ -52,8 +52,6 @@ class ApiChannel extends ApplicationChannel {
           () => CountryController(context),
         );
 
-    router.route("/*").link(() => FileController("public/"));
-
     return router;
   }
 }
