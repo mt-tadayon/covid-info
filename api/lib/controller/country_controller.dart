@@ -60,8 +60,6 @@ class CountryController extends ResourceController {
 
     countries.forEach(
       (country) {
-        print(country.entries.length);
-
         if (country.entries.isNotEmpty)
           country.entries.removeRange(1, country.entries.length);
       },
