@@ -442,6 +442,69 @@ class S {
       args: [],
     );
   }
+
+  String get errorMessage {
+    return Intl.message(
+      'Something went wrong, please try later again.',
+      name: 'errorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get globalStatisticTitle {
+    return Intl.message(
+      'Global Statistics',
+      name: 'globalStatisticTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get confirmedTitle {
+    return Intl.message(
+      'Confirmed',
+      name: 'confirmedTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get deathsTitle {
+    return Intl.message(
+      'Deaths',
+      name: 'deathsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get recoveredTitle {
+    return Intl.message(
+      'Recovered',
+      name: 'recoveredTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get countryNameHintText {
+    return Intl.message(
+      'Country Name',
+      name: 'countryNameHintText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get countryTitle {
+    return Intl.message(
+      'Country',
+      name: 'countryTitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

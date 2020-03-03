@@ -198,5 +198,40 @@
   "@travelAnswer": {
     "type": "text",
     "placeholders": {}
+  },
+  "errorMessage": "Leider ist etwas schiefgelaufen, bitte versuchen Sie es später.",
+  "@errorMessage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "globalStatisticTitle": "Globale Statistiken",
+  "@globalStatisticTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmedTitle": "Bestätigt",
+  "@confirmedTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deathsTitle": "Todesfall",
+  "@deathsTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "recoveredTitle": "Geheilt",
+  "@recoveredTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "countryNameHintText": "Ländername",
+  "@countryNameHintText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "countryTitle": "Land",
+  "@countryTitle": {
+    "type": "text",
+    "placeholders": {}
   }
 }
