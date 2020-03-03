@@ -24,7 +24,7 @@ class _StatisticsWidgetState extends State<StatisticsWidget> {
     if (widget.snapshot.hasData) {
       return ListView(children: <Widget>[
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(10.0),
           child: Text(
               '${S.of(context).informationFromText} ${DateFormat.yMd().format(DateTime.now())} - UTC +1'),
         ),
@@ -53,35 +53,38 @@ ${S.of(context).recoveredTitle}: ${widget.snapshot.data.first.recovered}
             },
           ),
         ),
-        Card(
-          elevation: 5.0,
-          child: SingleChildScrollView(
-            child: DataTable(
-              columnSpacing: 10.0,
-              columns: <DataColumn>[
-                DataColumn(label: Text(S.of(context).countryTitle)),
-                DataColumn(label: Text(S.of(context).confirmedTitle)),
-                DataColumn(label: Text(S.of(context).recoveredTitle)),
-                DataColumn(label: Text(S.of(context).deathsTitle)),
-              ],
-              rows: widget.snapshot.data
-                  .where((data) {
-                    if (data.countryName.contains('Total')) return false;
-                    if (searchCountryName.isEmpty)
-                      return true;
-                    else {
-                      return data.countryName
-                          .toUpperCase()
-                          .contains(searchCountryName.toUpperCase());
-                    }
-                  })
-                  .map((data) => DataRow(cells: [
-                        DataCell(Text(data.countryName)),
-                        DataCell(Text(data.confirmed.toString())),
-                        DataCell(Text(data.recovered.toString())),
-                        DataCell(Text(data.death.toString()))
-                      ]))
-                  .toList(),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Card(
+            elevation: 5.0,
+            child: SingleChildScrollView(
+              child: DataTable(
+                columnSpacing: 10.0,
+                columns: <DataColumn>[
+                  DataColumn(label: Text(S.of(context).countryTitle)),
+                  DataColumn(label: Text(S.of(context).confirmedTitle)),
+                  DataColumn(label: Text(S.of(context).recoveredTitle)),
+                  DataColumn(label: Text(S.of(context).deathsTitle)),
+                ],
+                rows: widget.snapshot.data
+                    .where((data) {
+                      if (data.countryName.contains('Total')) return false;
+                      if (searchCountryName.isEmpty)
+                        return true;
+                      else {
+                        return data.countryName
+                            .toUpperCase()
+                            .contains(searchCountryName.toUpperCase());
+                      }
+                    })
+                    .map((data) => DataRow(cells: [
+                          DataCell(Text(data.countryName)),
+                          DataCell(Text(data.confirmed.toString())),
+                          DataCell(Text(data.recovered.toString())),
+                          DataCell(Text(data.death.toString()))
+                        ]))
+                    .toList(),
+              ),
             ),
           ),
         )
