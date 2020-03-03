@@ -4,6 +4,11 @@
     "type": "text",
     "placeholders": {}
   },
+  "navigationStatistic": "Statistic",
+  "@navigationStatistic": {
+    "type": "text",
+    "placeholders": {}
+  },
   "navigationPrevention": "Prevention",
   "@navigationPrevention": {
     "type": "text",
@@ -16,6 +21,11 @@
   },
   "appBarTitleHome": "General Information",
   "@appBarTitleHome": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appBarTitleStatistic": "Statistic",
+  "@appBarTitleStatistic": {
     "type": "text",
     "placeholders": {}
   },

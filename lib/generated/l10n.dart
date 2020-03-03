@@ -38,6 +38,15 @@ class S {
     );
   }
 
+  String get navigationStatistic {
+    return Intl.message(
+      'Statistic',
+      name: 'navigationStatistic',
+      desc: '',
+      args: [],
+    );
+  }
+
   String get navigationPrevention {
     return Intl.message(
       'Prevention',
@@ -60,6 +69,15 @@ class S {
     return Intl.message(
       'General Information',
       name: 'appBarTitleHome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get appBarTitleStatistic {
+    return Intl.message(
+      'Statistic',
+      name: 'appBarTitleStatistic',
       desc: '',
       args: [],
     );
