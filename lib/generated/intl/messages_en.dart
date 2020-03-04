@@ -44,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "incubationAnswer" : MessageLookupByLibrary.simpleMessage("At the moment the general consents are that the incubation time is up to 14 days. This number is from the GHO und explains that the median is around five days. As soon as there are new informatio, we will update this."),
     "incubationQuestion" : MessageLookupByLibrary.simpleMessage("How long is the incubation period of COVID-19?"),
     "infectionInformation" : MessageLookupByLibrary.simpleMessage("If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority."),
+    "informationFromText" : MessageLookupByLibrary.simpleMessage("Information from"),
     "keepDistanceText" : MessageLookupByLibrary.simpleMessage("Keep at least one-meter distance between yourself and someone who is sneezing or coughing"),
     "keepDistanceTitle" : MessageLookupByLibrary.simpleMessage("Keep one-meter distance"),
     "navigationBarHome" : MessageLookupByLibrary.simpleMessage("Info"),

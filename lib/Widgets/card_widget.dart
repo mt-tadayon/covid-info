@@ -16,22 +16,25 @@ class CardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 5.0,
-      child: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: ListTileTheme(
-          iconColor: defaultColor.shade500,
-          child: ListTile(
-            title: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10.0),
-              child: Text(
-                title,
-                style: Theme.of(context).textTheme.title,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Card(
+        elevation: 5.0,
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: ListTileTheme(
+            iconColor: defaultColor.shade500,
+            child: ListTile(
+              title: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10.0),
+                child: Text(
+                  title,
+                  style: Theme.of(context).textTheme.title,
+                ),
               ),
+              leading: icon,
+              subtitle: Text(text),
             ),
-            leading: icon,
-            subtitle: Text(text),
           ),
         ),
       ),

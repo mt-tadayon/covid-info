@@ -41,6 +41,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "incubationAnswer" : MessageLookupByLibrary.simpleMessage("Derzeit wird davon ausgegangen, dass die Inkubationszeit bis zu 14 Tagen beträgt. Dieser Wert ist eine Schätzung der WHO und erklärt das es im Durchschnitt etwa 5 Tage dauert. Sobald mehr Daten vorliegen werden diese aktualisiert."),
     "incubationQuestion" : MessageLookupByLibrary.simpleMessage("Wie lange ist die Inkubationszeit von COVID -19?"),
     "infectionInformation" : MessageLookupByLibrary.simpleMessage("Wenn Sie Fieber, Husten und Probleme beim Atmen haben, rufen Sie zunächst bei Ihrem Hausarzt an. Folgen Sie den Anweisungen Ihrer örtlichen Gesundheitsamtes."),
+    "informationFromText" : MessageLookupByLibrary.simpleMessage("Informationen vom"),
     "keepDistanceText" : MessageLookupByLibrary.simpleMessage("Versuchen Sie einen Abstand von mindestens ein bis zwei Meter, zwischen sich und Personen, die Husten oder Niesen, einzuhalten."),
     "keepDistanceTitle" : MessageLookupByLibrary.simpleMessage("Halten Sie ein Meter Abstand"),
     "navigationBarHome" : MessageLookupByLibrary.simpleMessage("Info"),

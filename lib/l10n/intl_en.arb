@@ -262,6 +262,11 @@
   "countryTitle": "Country",
   "@countryTitle": {
     "type": "text",
+  "placeholders": {}
+  },
+  "informationFromText": "Information from",
+  "@informationFromText": {
+    "type": "text",
     "placeholders": {}
   }
 }
