@@ -1,5 +1,5 @@
-import 'package:covid_19/Modells/countryModel.dart';
-import 'package:covid_19/Service/fetch_data.dart';
+import 'package:covid_19/models/countryModel.dart';
+import 'package:covid_19/services/fetch_data.dart';
 import 'package:covid_19/admob_keys.dart';
 import 'package:covid_19/generated/l10n.dart';
 import 'package:covid_19/screens/emergency/emergency_widget.dart';

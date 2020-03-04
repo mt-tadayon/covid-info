@@ -1,4 +1,4 @@
-import 'package:covid_19/Modells/countryModel.dart';
+import 'package:covid_19/models/countryModel.dart';
 import 'package:covid_19/Widgets/card_widget.dart';
 import 'package:covid_19/generated/l10n.dart';
 import 'package:flutter/material.dart';
