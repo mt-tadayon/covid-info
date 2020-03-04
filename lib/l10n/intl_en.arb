@@ -268,5 +268,15 @@
   "@informationFromText": {
     "type": "text",
     "placeholders": {}
+  },
+  "shareButtonText": "https://play.google.com/store/apps/details?id=de.myracledesign.covidinfo",
+  "@shareButtonText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareButtonSubject": "Stay up to date about Covid-19",
+  "@shareButtonSubject": {
+    "type": "text",
+    "placeholders": {}
   }
 }

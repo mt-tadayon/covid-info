@@ -514,6 +514,24 @@ class S {
       args: [],
     );
   }
+
+  String get shareButtonText {
+    return Intl.message(
+      'https://play.google.com/store/apps/details?id=de.myracledesign.covidinfo',
+      name: 'shareButtonText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get shareButtonSubject {
+    return Intl.message(
+      'Stay up to date about Covid-19',
+      name: 'shareButtonSubject',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

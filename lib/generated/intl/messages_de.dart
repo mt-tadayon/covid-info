@@ -55,6 +55,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "respiratoryHygieneText" : MessageLookupByLibrary.simpleMessage("Stellen Sie sicher, dass Sie beim Husten oder Niesen Ihren Mund und Nase mit gebeugtem Ellenbogen oder Taschentuch bedecken. Entsorgen Sie das gebrauchte Taschentuch danach sofort."),
     "respiratoryHygieneTitle" : MessageLookupByLibrary.simpleMessage("Husten und Niesen in Ellenbogen"),
     "seekingForHelpTitle" : MessageLookupByLibrary.simpleMessage("Suche nach Hilfe"),
+    "shareButtonSubject" : MessageLookupByLibrary.simpleMessage("Informiere dich über Covid-19"),
+    "shareButtonText" : MessageLookupByLibrary.simpleMessage("https://play.google.com/store/apps/details?id=de.myracledesign.covidinfo"),
     "spreadAnswer" : MessageLookupByLibrary.simpleMessage("Das COVID-19 Virus verbreitet sich von anderen Menschen, die mit dem Virus angesteckt sind. Die Krankheit wird durch Tröpfchen übertragen. Das bedeutet durch kleine Tröpfchen die beim Husten, Niesen oder Ausatmen in die Umgebung gestreut werden. Diese Tröpfchen werden von Objekten auf die Hände und darüber in Augen, Nase oder Mund gebracht.\n\nZudem empfiehlt das WHO einen Abstand von einem Meter von kranken Personen, da sich die Bakterien auch durch Einatmen ausbreiten können.\n"),
     "spreadQuestion" : MessageLookupByLibrary.simpleMessage("Wie verbreitet sich das COVID -19?"),
     "stayInformedText" : MessageLookupByLibrary.simpleMessage("Bleiben Sie über die neuesten Entwicklungen zu COVID-19 auf dem Laufenden. Befolgen Sie die Anweisungen Ihrer Gesundheitsbehörde, damit Sie sich und andere vor COVID-19 schützen können."),

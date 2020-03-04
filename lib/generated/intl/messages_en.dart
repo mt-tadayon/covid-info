@@ -59,6 +59,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "respiratoryHygieneText" : MessageLookupByLibrary.simpleMessage("That means making sure, you and people around you to cover mouth and nose with your bent elbow or tissue while coughing or sneezing. Don\'t forget to bin the used tissue directly."),
     "respiratoryHygieneTitle" : MessageLookupByLibrary.simpleMessage("Follow Respiratory Hygiene"),
     "seekingForHelpTitle" : MessageLookupByLibrary.simpleMessage("Seeking for help"),
+    "shareButtonSubject" : MessageLookupByLibrary.simpleMessage("Stay up to date about Covid-19"),
+    "shareButtonText" : MessageLookupByLibrary.simpleMessage("https://play.google.com/store/apps/details?id=de.myracledesign.covidinfo"),
     "spreadAnswer" : MessageLookupByLibrary.simpleMessage("The virus spread from other persons who are disposed of by the virus. The disease getting transferred by small droplets from the nose or mouth. This can happen if a person with COVID-19 coughs or exhales. This droplet goes on Surfaces and objects and from there with your hands to your eyes, nose and mouth.\n\n Additionally, the GHO recommends a distance of one meter to infected persons, because you can inhale the virus."),
     "spreadQuestion" : MessageLookupByLibrary.simpleMessage("How does COVID-19 spread?"),
     "stayInformedText" : MessageLookupByLibrary.simpleMessage("Follow the advice and directions from trustworthy resources such as your healthcare provider, WHO or GHO to protect yourself and others from COVID-19"),

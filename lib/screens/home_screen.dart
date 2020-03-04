@@ -13,6 +13,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:platform/platform.dart';
+import 'package:share/share.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -96,10 +97,11 @@ class _HomeScreenState extends State<HomeScreen> {
           children: <Widget>[
             HomeWidget(),
             FutureBuilder<List<CountryModel>>(
-              future: futureCountriesResult,
-              builder: (BuildContext context, AsyncSnapshot<List<CountryModel>> snapshot) {
-                return StatisticsWidget(snapshot: snapshot);
-              }),
+                future: futureCountriesResult,
+                builder: (BuildContext context,
+                    AsyncSnapshot<List<CountryModel>> snapshot) {
+                  return StatisticsWidget(snapshot: snapshot);
+                }),
             PreventionWidget(),
             EmergencyWidget(),
           ],
@@ -107,6 +109,17 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       appBar: AppBar(
         title: appBarTitle,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.share),
+            onPressed: () {
+              Share.share(
+                S.of(context).shareButtonText,
+                 subject: S.of(context).shareButtonSubject
+              );
+            },
+          )
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedTab,
