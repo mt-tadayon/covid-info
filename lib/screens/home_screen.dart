@@ -22,6 +22,10 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   Future<List<CountryModel>> futureCountriesResult;
 
+  BannerAd myBanner;
+  double bannerHeight = 0;
+  int selectedTab = 0;
+  Text appBarTitle;
   PageController _controller = PageController(
     initialPage: 0,
   );
@@ -77,16 +81,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return platformSpecificAdId;
   }
 
-  BannerAd myBanner;
-  double bannerHeight = 0;
-  int selectedTab = 0;
-  Text appBarTitle;
-
   @override
   Widget build(BuildContext context) {
     appBarTitle = appBarTitle ?? Text(S.of(context).appBarTitleHome);
 
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       body: Padding(
         padding: EdgeInsets.only(
           bottom: bannerHeight,
