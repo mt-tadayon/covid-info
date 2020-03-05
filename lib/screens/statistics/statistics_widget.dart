@@ -22,6 +22,8 @@ class _StatisticsWidgetState extends State<StatisticsWidget> {
   @override
   Widget build(BuildContext context) {
     if (widget.snapshot.hasData) {
+      var totalAmount = widget.snapshot.data.first;
+
       return ListView(children: <Widget>[
         Padding(
           padding: const EdgeInsets.all(10.0),
@@ -29,14 +31,25 @@ class _StatisticsWidgetState extends State<StatisticsWidget> {
               '${S.of(context).informationFromText} ${DateFormat.yMd().format(DateTime.now())} - UTC +1'),
         ),
         CardWidget(
-          icon: Icon(FontAwesome5Solid.globe),
-          title: S.of(context).globalStatisticTitle,
-          text:
-              '''${S.of(context).confirmedTitle}: ${widget.snapshot.data.first.confirmed}
-${S.of(context).deathsTitle}: ${widget.snapshot.data.first.death}
-${S.of(context).recoveredTitle}: ${widget.snapshot.data.first.recovered}
-          ''',
-        ),
+            icon: Icon(FontAwesome5Solid.globe),
+            title: S.of(context).globalStatisticTitle,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                RowWidget(
+                  title: S.of(context).confirmedTitle,
+                  amount: totalAmount.confirmed,
+                ),
+                RowWidget(
+                  title: S.of(context).recoveredTitle,
+                  amount: totalAmount.recovered,
+                ),
+                RowWidget(
+                  title: S.of(context).deathsTitle,
+                  amount: totalAmount.death,
+                )
+              ],
+            )),
         Padding(
           padding: const EdgeInsets.all(20.0),
           child: TextField(
@@ -106,5 +119,20 @@ ${S.of(context).recoveredTitle}: ${widget.snapshot.data.first.recovered}
       );
     }
     return Center(child: CircularProgressIndicator());
+  }
+}
+
+class RowWidget extends StatelessWidget {
+  final title;
+  final amount;
+
+  const RowWidget({Key key, this.title, this.amount}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [Text("$title: "), Text(NumberFormat().format(amount))],
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    );
   }
 }

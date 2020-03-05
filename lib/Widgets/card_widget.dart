@@ -5,14 +5,16 @@ import '../theme.dart';
 class CardWidget extends StatelessWidget {
   CardWidget({
     @required this.title,
-    @required this.text,
+    this.text,
     this.icon,
+    this.child,
     Key key,
   }) : super(key: key);
 
   final String title;
   final String text;
   final Icon icon;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,7 @@ class CardWidget extends StatelessWidget {
                 ),
               ),
               leading: icon,
-              subtitle: Text(text),
+              subtitle: text == null ? child : Text(text),
             ),
           ),
         ),
