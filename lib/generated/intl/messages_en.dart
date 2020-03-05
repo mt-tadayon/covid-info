@@ -54,7 +54,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "notToDoAnswer" : MessageLookupByLibrary.simpleMessage("Smoking, wearing multiple masks, taking traditional herbal remedies and taking self-medication such as antibiotics ARE NOT effective against COVID-2019 and can be harmful.\n\nIn any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be sure to share your recent travel history with your health care provider."),
     "notToDoQuestion" : MessageLookupByLibrary.simpleMessage("What should I not do?"),
     "possibleInfection" : MessageLookupByLibrary.simpleMessage("Possible Infection"),
-    "protectingOthersTitle" : MessageLookupByLibrary.simpleMessage("Protect others from getting sick."),
+    "protectingOthersTitle" : MessageLookupByLibrary.simpleMessage("Protect others from getting sick"),
     "recoveredTitle" : MessageLookupByLibrary.simpleMessage("Recovered"),
     "respiratoryHygieneText" : MessageLookupByLibrary.simpleMessage("That means making sure, you and people around you to cover mouth and nose with your bent elbow or tissue while coughing or sneezing. Don\'t forget to bin the used tissue directly."),
     "respiratoryHygieneTitle" : MessageLookupByLibrary.simpleMessage("Follow Respiratory Hygiene"),

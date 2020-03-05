@@ -310,7 +310,7 @@ class S {
 
   String get protectingOthersTitle {
     return Intl.message(
-      'Protect others from getting sick.',
+      'Protect others from getting sick',
       name: 'protectingOthersTitle',
       desc: '',
       args: [],
