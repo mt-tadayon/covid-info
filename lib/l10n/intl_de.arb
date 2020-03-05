@@ -248,5 +248,10 @@
   "@shareButtonSubject": {
     "type": "text",
     "placeholders": {}
+  },
+  "shareAppTitle": "Teile diese App",
+  "@shareAppTitle": {
+    "type": "text",
+    "placeholders": {}
   }
 }

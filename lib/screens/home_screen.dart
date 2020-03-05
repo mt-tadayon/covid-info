@@ -15,6 +15,10 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:platform/platform.dart';
 import 'package:share/share.dart';
 
+enum AppBarPopUpMenuItems {
+  ShareApp,
+}
+
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -110,14 +114,31 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: appBarTitle,
         actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.share),
-            onPressed: () {
-              Share.share(
-                S.of(context).shareButtonText,
-                 subject: S.of(context).shareButtonSubject
-              );
+          PopupMenuButton(
+            icon: Icon(Icons.more_vert),
+            onSelected: (selected) {
+              if (selected == AppBarPopUpMenuItems.ShareApp) {
+                Share.share(
+                  S.of(context).shareButtonText,
+                  subject: S.of(context).shareButtonSubject,
+                );
+              }
             },
+            itemBuilder: (context) => [
+              PopupMenuItem(
+                value: AppBarPopUpMenuItems.ShareApp,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    Icon(
+                      Icons.share,
+                      color: Theme.of(context).primaryColor,
+                    ),
+                    Text(S.of(context).shareAppTitle),
+                  ],
+                ),
+              )
+            ],
           )
         ],
       ),
