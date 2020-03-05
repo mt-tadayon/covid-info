@@ -52,18 +52,41 @@ class _StatisticsWidgetState extends State<StatisticsWidget> {
             )),
         Padding(
           padding: const EdgeInsets.all(20.0),
-          child: TextField(
-            controller: _searchCountryController,
-            decoration: InputDecoration(
-              prefixIcon: Icon(
-                FontAwesome5Solid.search,
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                flex: 7,
+                child: TextField(
+                  controller: _searchCountryController,
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(
+                      FontAwesome5Solid.search,
+                    ),
+                    hintText: S.of(context).countryNameHintText,
+                  ),
+                  onChanged: (value) {
+                    setState(() {
+                      searchCountryName = value;
+                    });
+                  },
+                ),
               ),
-              hintText: S.of(context).countryNameHintText,
-            ),
-            onChanged: (value) {
-              searchCountryName = value;
-              setState(() {});
-            },
+              Expanded(
+                flex: 1,
+                child: GestureDetector(
+                  child: Icon(
+                    FontAwesome5.times_circle,
+                    color: Theme.of(context).primaryColor,
+                  ),
+                  onTap: () {
+                    setState(() {
+                      searchCountryName = "";
+                      _searchCountryController.clear();
+                    });
+                  },
+                ),
+              )
+            ],
           ),
         ),
         Padding(
