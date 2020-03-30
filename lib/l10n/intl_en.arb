@@ -154,7 +154,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "protectingOthersTitle": "Protect others from getting sick.",
+  "protectingOthersTitle": "Protect others from getting sick",
   "@protectingOthersTitle": {
     "type": "text",
     "placeholders": {}
@@ -262,7 +262,7 @@
   "countryTitle": "Country",
   "@countryTitle": {
     "type": "text",
-  "placeholders": {}
+    "placeholders": {}
   },
   "informationFromText": "Information from",
   "@informationFromText": {
@@ -276,6 +276,11 @@
   },
   "shareButtonSubject": "Stay up to date about Covid-19",
   "@shareButtonSubject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareAppTitle": "Share App",
+  "@shareAppTitle": {
     "type": "text",
     "placeholders": {}
   }

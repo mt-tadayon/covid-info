@@ -109,7 +109,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "protectingOthersTitle": "Schützen Sie andere vor dem Erkranken.",
+  "protectingOthersTitle": "Schützen Sie andere vor dem Erkranken",
   "@protectingOthersTitle": {
     "type": "text",
     "placeholders": {}
@@ -246,6 +246,11 @@
   },
   "shareButtonSubject": "Informiere dich über Covid-19",
   "@shareButtonSubject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareAppTitle": "Teile diese App",
+  "@shareAppTitle": {
     "type": "text",
     "placeholders": {}
   }

@@ -310,7 +310,7 @@ class S {
 
   String get protectingOthersTitle {
     return Intl.message(
-      'Protect others from getting sick.',
+      'Protect others from getting sick',
       name: 'protectingOthersTitle',
       desc: '',
       args: [],
@@ -528,6 +528,15 @@ class S {
     return Intl.message(
       'Stay up to date about Covid-19',
       name: 'shareButtonSubject',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get shareAppTitle {
+    return Intl.message(
+      'Share App',
+      name: 'shareAppTitle',
       desc: '',
       args: [],
     );
