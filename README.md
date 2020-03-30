@@ -12,7 +12,7 @@ It contains four main parts, which are:
 - Prevention: How you can protect yourself from covid-19.
 - Emergency: What you should do and how you should react if you have the symptom of covid-19.
 
-[covid_info_app](/assets/gif/covid_19.gif)
+![covid_info_app](/assets/gif/covid_19.gif)
 
 ## App Store and Play Store
 This application was published for couple of days in app store. 
@@ -24,7 +24,7 @@ Even if you can't find it anymore in app store, it's still available as website:
 
 ## Contributors:
 - [Max Weber](https://github.com/md-weber)
--[Mahtab Tadayon](https://github.com/mimifi)
+- [Mahtab Tadayon](https://github.com/mimifi)
 
 
 ## Furthur information about covid-19 applications:
