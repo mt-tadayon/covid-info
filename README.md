@@ -9,12 +9,12 @@ This application should help people to get general information about Covid-19.
 It contains four main parts, which are:
 - Info: General information about this disease
 - Statistic: Global number of confirmed, recovered and deaths. Additionally, it provides a statistic about different countries. The search field will help you to search for a country name and get all the information about it.
-- Prevention: How you can protect yourself from covid-19.
-- Emergency: What you should do and how you should react if you have the symptom of covid-19.
+- Prevention: How you can protect yourself from Covid-19.
+- Emergency: What you should do and how you should react if you have the symptom of Covid-19.
 
 ![covid_info_app](/assets/gif/covid_19.gif)
 
-## App Store and Play Store
+## Publication
 This application was published for couple of days in app store. 
 After google suspended all application about covid-19, we decided to share our repository.
 
