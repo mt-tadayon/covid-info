@@ -1,11 +1,34 @@
 [![Codemagic build status](https://api.codemagic.io/apps/5e5b5032e389932f9f06cc60/5e5b5032e389932f9f06cc5f/status_badge.svg)](https://codemagic.io/apps/5e5b5032e389932f9f06cc60/5e5b5032e389932f9f06cc5f/latest_build)
 
-# covid_19
+# Covid Info
 
-A new Flutter project.
+## Goal of this app
+
+This application should help people to get general information about Covid-19.
+ 
+It contains four main parts, which are:
+- Info: General information about this disease
+- Statistic: Global number of confirmed, recovered and deaths. Additionally, it provides a statistic about different countries. The search field will help you to search for a country name and get all the information about it.
+- Prevention: How you can protect yourself from covid-19.
+- Emergency: What you should do and how you should react if you have the symptom of covid-19.
+
+## App Store and Play Store
+This application was published for couple of days in app store. 
+After google suspended all application about covid-19, we decided to share our repository.
+
+## Web Version
+Even if you can't find it anymore in app store, it's still available as website: 
+- [Covid Info](https://covid-api.herokuapp.com/#/)
+
+## Contributors:
+- [Max Weber](https://github.com/md-weber)
+-[Mahtab Tadayon](https://github.com/mimifi)
+
+
+## Furthur information about covid-19 applications:
+- [WHO Repo](https://github.com/WorldHealthOrganization/app)
 
 ## Getting Started
-
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
