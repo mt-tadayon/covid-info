@@ -1,5 +1,5 @@
-import 'package:covid_19/Modells/countryModel.dart';
-import 'package:covid_19/Service/fetch_data.dart';
+import 'package:covid_19/models/countryModel.dart';
+import 'package:covid_19/services/fetch_data.dart';
 import 'package:covid_19/admob_keys.dart';
 import 'package:covid_19/generated/l10n.dart';
 import 'package:covid_19/screens/emergency/emergency_widget.dart';
@@ -13,6 +13,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:platform/platform.dart';
+import 'package:share/share.dart';
+
+enum AppBarPopUpMenuItems {
+  ShareApp,
+}
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -96,10 +101,11 @@ class _HomeScreenState extends State<HomeScreen> {
           children: <Widget>[
             HomeWidget(),
             FutureBuilder<List<CountryModel>>(
-              future: futureCountriesResult,
-              builder: (BuildContext context, AsyncSnapshot<List<CountryModel>> snapshot) {
-                return StatisticsWidget(snapshot: snapshot);
-              }),
+                future: futureCountriesResult,
+                builder: (BuildContext context,
+                    AsyncSnapshot<List<CountryModel>> snapshot) {
+                  return StatisticsWidget(snapshot: snapshot);
+                }),
             PreventionWidget(),
             EmergencyWidget(),
           ],
@@ -107,6 +113,34 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       appBar: AppBar(
         title: appBarTitle,
+        actions: <Widget>[
+          PopupMenuButton(
+            icon: Icon(Icons.more_vert),
+            onSelected: (selected) {
+              if (selected == AppBarPopUpMenuItems.ShareApp) {
+                Share.share(
+                  S.of(context).shareButtonText,
+                  subject: S.of(context).shareButtonSubject,
+                );
+              }
+            },
+            itemBuilder: (context) => [
+              PopupMenuItem(
+                value: AppBarPopUpMenuItems.ShareApp,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    Icon(
+                      Icons.share,
+                      color: Theme.of(context).primaryColor,
+                    ),
+                    Text(S.of(context).shareAppTitle),
+                  ],
+                ),
+              )
+            ],
+          )
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedTab,

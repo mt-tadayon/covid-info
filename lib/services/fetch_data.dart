@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:covid_19/Modells/countryModel.dart';
+import 'package:covid_19/models/countryModel.dart';
 import 'package:http/http.dart' as http;
 
 Future<List<CountryModel>> fetchCountryData() async {

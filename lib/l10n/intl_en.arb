@@ -154,7 +154,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "protectingOthersTitle": "Protect others from getting sick.",
+  "protectingOthersTitle": "Protect others from getting sick",
   "@protectingOthersTitle": {
     "type": "text",
     "placeholders": {}
@@ -266,6 +266,26 @@
   },
   "informationFromText": "Information from",
   "@informationFromText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "informationFromText": "Information from",
+  "@informationFromText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareButtonText": "https://play.google.com/store/apps/details?id=de.myracledesign.covidinfo",
+  "@shareButtonText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareButtonSubject": "Stay up to date about Covid-19",
+  "@shareButtonSubject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareAppTitle": "Share App",
+  "@shareAppTitle": {
     "type": "text",
     "placeholders": {}
   }

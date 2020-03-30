@@ -15,7 +15,7 @@ class S {
     AppLocalizationDelegate();
 
   static Future<S> load(Locale locale) {
-    final String name = locale.countryCode.isEmpty ? locale.languageCode : locale.toString();
+    final String name = (locale.countryCode?.isEmpty ?? false) ? locale.languageCode : locale.toString();
     final String localeName = Intl.canonicalizedLocale(name);
     return initializeMessages(localeName).then((_) {
       Intl.defaultLocale = localeName;
@@ -310,7 +310,7 @@ class S {
 
   String get protectingOthersTitle {
     return Intl.message(
-      'Protect others from getting sick.',
+      'Protect others from getting sick',
       name: 'protectingOthersTitle',
       desc: '',
       args: [],
@@ -514,6 +514,33 @@ class S {
       args: [],
     );
   }
+
+  String get shareButtonText {
+    return Intl.message(
+      'https://play.google.com/store/apps/details?id=de.myracledesign.covidinfo',
+      name: 'shareButtonText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get shareButtonSubject {
+    return Intl.message(
+      'Stay up to date about Covid-19',
+      name: 'shareButtonSubject',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get shareAppTitle {
+    return Intl.message(
+      'Share App',
+      name: 'shareAppTitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
@@ -521,7 +548,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
 
   List<Locale> get supportedLocales {
     return const <Locale>[
-      Locale('de', ''), Locale('en', ''),
+      Locale.fromSubtags(languageCode: 'de'), Locale.fromSubtags(languageCode: 'en'),
     ];
   }
 

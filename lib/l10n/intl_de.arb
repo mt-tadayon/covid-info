@@ -109,7 +109,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "protectingOthersTitle": "Schützen Sie andere vor dem Erkranken.",
+  "protectingOthersTitle": "Schützen Sie andere vor dem Erkranken",
   "@protectingOthersTitle": {
     "type": "text",
     "placeholders": {}
@@ -236,6 +236,21 @@
   },
   "informationFromText": "Informationen vom",
   "@informationFromText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareButtonText": "https://play.google.com/store/apps/details?id=de.myracledesign.covidinfo",
+  "@shareButtonText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareButtonSubject": "Informiere dich über Covid-19",
+  "@shareButtonSubject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareAppTitle": "Teile diese App",
+  "@shareAppTitle": {
     "type": "text",
     "placeholders": {}
   }
