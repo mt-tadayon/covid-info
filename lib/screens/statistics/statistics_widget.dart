@@ -22,13 +22,13 @@ class _StatisticsWidgetState extends State<StatisticsWidget> {
   @override
   Widget build(BuildContext context) {
     if (widget.snapshot.hasData) {
-      var totalAmount = widget.snapshot.data.first;
+      CountryModel countryModel = widget.snapshot.data.first;
 
       return ListView(children: <Widget>[
         Padding(
           padding: const EdgeInsets.all(10.0),
           child: Text(
-              '${S.of(context).informationFromText} ${DateFormat.yMd().format(DateTime.now())} - UTC +1'),
+              '${S.of(context).informationFromText} ${DateFormat.yMd().format(DateTime.parse(countryModel.timestamp))} - UTC +1'),
         ),
         CardWidget(
             icon: Icon(FontAwesome5Solid.globe),
@@ -38,15 +38,15 @@ class _StatisticsWidgetState extends State<StatisticsWidget> {
               children: <Widget>[
                 RowWidget(
                   title: S.of(context).confirmedTitle,
-                  amount: totalAmount.confirmed,
+                  amount: countryModel.confirmed,
                 ),
                 RowWidget(
                   title: S.of(context).recoveredTitle,
-                  amount: totalAmount.recovered,
+                  amount: countryModel.recovered,
                 ),
                 RowWidget(
                   title: S.of(context).deathsTitle,
-                  amount: totalAmount.death,
+                  amount: countryModel.death,
                 )
               ],
             )),
