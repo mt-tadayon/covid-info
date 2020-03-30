@@ -1,6 +1,0 @@
-database:
-  username: "dngyebyelskxqq"
-  password: "ebf4359ad3b7bdf6da6a56b387418e9ab40d292e7c334866e0e6b7b99be49c69"
-  host: "ec2-54-247-169-129.eu-west-1.compute.amazonaws.com"
-  port: 5432
-  databaseName: "datc3l2rks4kit"
